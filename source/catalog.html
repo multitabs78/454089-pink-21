@@ -9,11 +9,11 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
+    <a class="page-header__logo main-logo" href="index.html">
       <img src="http://placehold.it/74x23" width="74" height="23" alt="Логотип Pink">
     </a>
+    <button class="main-nav-toggle" type="button"><span class="visually-hidden">Меню</span></button>
     <nav class="page-header__nav main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -25,7 +25,7 @@
           <a class="main-nav__link" href="form.html">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -176,7 +176,8 @@
       </div>
       <form action="https://echo.htmlacademy.ru/" method="POST">
         <div class="photo-upload__form-wrapper">
-          <img class="photo-upload__image" src="http://placehold.it/280x374" alt="Заснеженная дорога">
+          <label class="photo-upload__label" for="photo-upload"><img class="photo-upload__image" src="http://placehold.it/280x374" alt="Заснеженная дорога"></label>
+          <input class="photo-upload__input" id="photo-upload" type="file">
           <div class="photo-upload__tools tool">
             <ul class="tool__icon-list">
               <li class="tool__icon-item tool__icon-item--crop">
