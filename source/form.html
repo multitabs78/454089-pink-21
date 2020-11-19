@@ -43,22 +43,19 @@
         бонусную карту!</p>
       <form class="form contest__form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="form__fieldset contest-fieldset">
-          <div class="contest-field">
-            <label class="contest-field__label" for="surname">Фамилия:</label>
-            <input class="contest-field__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*"
-              required>
+          <div class="field">
+            <label class="field__label" for="surname">Фамилия:</label>
+            <input class="field__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
           </div>
 
-          <div class="contest-field">
-            <label class="contest-field__label" for="name">Имя:</label>
-            <input class="contest-field__input" type="text" name="name" id="name" placeholder="Введите ваше имя*"
-              required>
+          <div class="field">
+            <label class="field__label" for="name">Имя:</label>
+            <input class="field__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
           </div>
 
-          <div class="contest-field">
-            <label class="contest-field__label" for="patronymic">Отчество:</label>
-            <input class="contest-field__input" type="text" name="patronymic" id="patronymic"
-              placeholder="Ну и отчество тоже">
+          <div class="field">
+            <label class="field__label" for="patronymic">Отчество:</label>
+            <input class="field__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
           </div>
 
         </fieldset>
@@ -66,34 +63,34 @@
         <fieldset class="form__fieldset contest-fieldset">
           <legend class="contest-fieldset__legend contest-fieldset__legend--hide-mobile">С каким приложением
             путешествовали?</legend>
-          <label class="contest-radio" for="app-ios">
-            <input class="contest-radio__input" type="radio" name="app" id="app-ios" value="Ios" checked>
+          <label class="radio-field">
+            <input class="radio-field__input" type="radio" name="app" value="ios" checked>
             <span class="contest__label-text">Pink для iOS</span>
           </label>
 
-          <label class="contest-radio" for="app-andriod">
-            <input class="contest-radio__input" type="radio" name="app" id="app-andriod" value="Andriod">
+          <label class="radio-field">
+            <input class="radio-field__input" type="radio" name="app" value="Andriod">
             <span class="contest__label-text">Pink на Android</span>
           </label>
 
-          <label class="contest-radio" for="app-windows">
-            <input class="contest-radio__input" type="radio" name="app" id="app-windows" value="Windows">
+          <label class="radio-field">
+            <input class="radio-field__input" type="radio" name="app" value="Windows">
             <span class="contest__label-text">Windows Phone</span>
           </label>
         </fieldset>
 
         <fieldset class="form__fieldset contest-fieldset">
           <legend class="contest-fieldset__legend contest-fieldset__legend--clear-mobile">Контактная информация</legend>
-          <div class="contest-field">
-            <label class="contest-field__label" for="phone">Номер телефона</label>
-            <input class="contest-field__input contest-field__input--contacts" type="tel" name="phone" id="phone"
+          <div class="field">
+            <label class="field__label" for="phone">Номер телефона</label>
+            <input class="field__input field__input--contacts" type="tel" name="phone" id="phone"
               pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
               placeholder="Номер, пожалуйста">
           </div>
 
-          <div class="contest-field">
-            <label class="contest-field__label" for="email">Адрес почты</label>
-            <input class="contest-field__input contest-field__input--contacts" type="email" name="email" id="email"
+          <div class="field">
+            <label class="field__label" for="email">Адрес почты</label>
+            <input class="field__input field__input--contacts" type="email" name="email" id="email"
               placeholder="Введите почту*" required>
           </div>
         </fieldset>
@@ -102,39 +99,34 @@
           <legend class="contest-fieldset__legend contest-fieldset__legend--hide-mobile">Ваши безбашенные достижения в
             путешествиях
           </legend>
-          <label class="contest-checkbox" for="shark-selfie">
-            <input class="contest-checkbox__checkbox" type="checkbox" name="achievements" id="shark-selfie"
-              value="shark-selfie" checked>
+          <label class="checkbox-field">
+            <input class="checkbox-field__checkbox" type="checkbox" name="achievements" value="shark-selfie" checked>
             <span class="contest__label-text">Сделал селфи с акулой</span>
           </label>
 
-          <label class="contest-checkbox" for="beach-burn">
-            <input class="contest-checkbox__checkbox" type="checkbox" name="achievements" id="beach-burn"
-              value="beach-burn" checked>
+          <label class="checkbox-field">
+            <input class="checkbox-field__checkbox" type="checkbox" name="achievements" value="beach-burn" checked>
             <span class="contest__label-text">Обгорел на пляже</span>
           </label>
 
-          <label class="contest-checkbox" for="see-norris">
-            <input class="contest-checkbox__checkbox" type="checkbox" name="achievements" id="see-norris"
-              value="see-norris">
+          <label class="checkbox-field">
+            <input class="checkbox-field__checkbox" type="checkbox" name="achievements" value="see-norris">
             <span class="contest__label-text">Видел Чака Норриса</span>
           </label>
 
-          <label class="contest-checkbox" for="buy-souvenirs">
-            <input class="contest-checkbox__checkbox" type="checkbox" name="achievements" id="buy-souvenirs">
+          <label class="checkbox-field">
+            <input class="checkbox-field__checkbox" type="checkbox" name="achievements">
             <span class="contest__label-text">Накупил сувениров</span>
           </label>
           value="buy-souvenirs">
 
-          <label class="contest-checkbox" for="hold-tower">
-            <input class="contest-checkbox__checkbox" type="checkbox" name="achievements" id="hold-tower"
-              value="hold-tower" checked>
+          <label class="checkbox-field">
+            <input class="checkbox-field__checkbox" type="checkbox" name="achievements" value="hold-tower" checked>
             <span class="contest__label-text">Удержал башню</span>
           </label>
 
-          <label class="contest-checkbox" for="crush-hotel">
-            <input class="contest-checkbox__checkbox" type="checkbox" name="achievements" id="crush-hotel"
-              value="crush-hotel">
+          <label class="checkbox-field">
+            <input class="checkbox-field__checkbox" type="checkbox" name="achievements" value="crush-hotel">
             <span class="contest__label-text">Разгромил отель</span>
           </label>
         </fieldset>
@@ -191,7 +183,7 @@
           рассмотрим ее и оповестим вас.</p>
       </div>
       <div class="popup__inner">
-        <button class="button button--popup button--popup-success" type="button">Закрыть окно</button>
+        <button class="button  button--success popup__button" type="button">Закрыть окно</button>
       </div>
     </section>
 
@@ -201,7 +193,7 @@
         <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
       <div class="popup__inner">
-        <button class="button button--popup" type="button">Ок</button>
+        <button class="button popup__button" type="button">Ок</button>
       </div>
     </section>
   </div>
