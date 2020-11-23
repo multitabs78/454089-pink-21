@@ -1,6 +1,5 @@
 .features {
-  padding-top: 46px;
-  outline: inset 2px solid yellow;
+  padding: 46px 20px 0;
 }
 
 .features__title {
@@ -13,11 +12,10 @@
 
 .features__list {
   @include reset-list;
-  background-image: url("../../img/grey-background.png");
 }
 
 .features__item-title {
-  color: $black;
+  color: $color-secondary-text;
   font-size: 18px;
   font-weight: 700;
 }

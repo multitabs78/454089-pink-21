@@ -1,3 +1,8 @@
+.contacts {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
 .contacts__title {
   font-size: 24px;
   line-height: 120%;
@@ -10,19 +15,19 @@
 }
 
 .contacts__link {
-  color: $pink;
+  color: $link-color;
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
 
   &--email:hover {
-    color: $main-blue;
+    color: $link-color--hover;
     text-decoration: underline;
   }
 
   &--email:active {
-    color: $main-blue;
+    color: $link-color--active;
     opacity: 0.3;
   }
 }

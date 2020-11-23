@@ -12,11 +12,11 @@
 .button--download {
   padding: 12px 0;
   background-color: transparent;
-  border: 3px solid $white;
+  border: 3px solid white;
   border-radius: 25px;
 
   &:hover {
-    color: $pink;
-    background-color: $white;
+    color: $link-color;
+    background-color: white;
   }
 }

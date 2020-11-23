@@ -1,0 +1,25 @@
+//Base font
+$font-size-base: 14px;
+$line-height-base: 24px;
+//Base colors
+$color-white: #ffffff;
+$color-pink: #d22856;
+$color-blue: #283645;
+$color-black: #000000;
+$color-grey--light: #f2f2f2;
+$color-grey: #e5e5e5;
+$color-green: #2aab6d;
+$color-green--dark: #1c9b5e;
+//Interface colors
+$color-primary: $color-blue;
+$color-primary-text: $color-blue;
+$color-secondary: $color-pink;
+$color-secondary-text: $color-black;
+$color-heading-text: $color-white;
+//Table
+$border-color: $color-grey;
+$table-background-color: $color-white;
+//Link
+$link-color: $color-pink;
+$link-color--hover: $link-color;
+$link-color--active: $link-color;
