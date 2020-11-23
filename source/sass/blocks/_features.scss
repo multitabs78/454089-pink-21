@@ -1,0 +1,23 @@
+.features {
+  padding-top: 46px;
+  outline: inset 2px solid yellow;
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+}
+
+.features__list {
+  @include reset-list;
+  background-image: url("../../img/grey-background.png");
+}
+
+.features__item-title {
+  color: $black;
+  font-size: 18px;
+  font-weight: 700;
+}

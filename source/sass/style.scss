@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+//Helpers
+@import "helpers/variables";
+@import "helpers/visually-hidden";
+@import "helpers/mixins";
+// Global
+@import "global/fonts";
+//Blocks
+@import "blocks/page";
+@import "blocks/page-body";
+@import "blocks/page-header";
+@import "blocks/page-title";
+@import "blocks/page-footer";
+@import "blocks/main-nav";
+@import "blocks/market-list";
+@import "blocks/features";
+@import "blocks/research";
+@import "blocks/testimonials";
+@import "blocks/price";
+@import "blocks/contacts";
+@import "blocks/social-icon";
+//Components
+@import "components/button";
+@import "components/carousel";

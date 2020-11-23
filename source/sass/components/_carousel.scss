@@ -1,0 +1,18 @@
+.carousel__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-color: $main-blue;
+
+  &--current {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $white;
+    border: 3px solid $main-blue;
+    opacity: 1;
+  }
+}

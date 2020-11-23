@@ -1,0 +1,17 @@
+.social-icon {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid rgba(#283645, 0.1);
+
+  &:hover {
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    border: 3px solid #283645;
+    opacity: 0.1;
+  }
+}
+
