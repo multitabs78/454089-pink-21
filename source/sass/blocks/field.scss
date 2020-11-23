@@ -1,0 +1,12 @@
+.field__label {
+  color: $form-label-color;
+}
+
+.field__input {
+  width: 100%;
+  padding: 10px 0 10px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-primary;
+  border: 2px solid #e5e5e5;
+}

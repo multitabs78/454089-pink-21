@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="http://placehold.it/74x23" width="74" height="23" alt="Логотип Pink">
+    <a class="page-header__link">
+      <img class="page-header__logo" src="http://placehold.it/74x23" width="74" height="23" alt="Логотип Pink">
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
@@ -106,9 +107,9 @@
           <button class="testimonials__next" type="button">Следующий отзыв</button>
         </div>
         <div class="testimonials__toggles carousel__toggles">
-          <button class="carousel__toggle carousel__toggle--current" type="button">1</button>
-          <button class="carousel__toggle" type="button">2</button>
-          <button class="carousel__toggle" type="button">3</button>
+          <button class="carousel__toggle carousel__toggle--current" type="button" aria-label="1"></button>
+          <button class="carousel__toggle" type="button" aria-label="2"></button>
+          <button class="carousel__toggle" type="button" aria-label="3"></button>
         </div>
       </div>
     </section>
@@ -119,7 +120,7 @@
         <table class="price__list">
           <thead class="price__list-head">
             <tr>
-              <th class="price__title price__title--blank"></th>
+              <th class="price__title  price__title--blank price__title--hide"></th>
               <th class="price__title carousel-item">База<p class="price__title-value">1,99 USD</p>
               </th>
               <th class="price__title price__title--hit carousel-item">Стандарт<p class="price__title-value">3,99 USD
@@ -155,9 +156,9 @@
           </tbody>
         </table>
         <div class="price__toggles carousel__toggles">
-          <button class="carousel__toggle" type="button">1</button>
-          <button class="carousel__toggle carousel__toggle--current" type="button">2</button>
-          <button class="carousel__toggle" type="button">3</button>
+          <button class="carousel__toggle" type="button" aria-label="1"></button>
+          <button class="carousel__toggle carousel__toggle--current" type="button" aria-label="2"></button>
+          <button class="carousel__toggle" type="button" aria-label="3"></button>
         </div>
       </div>
     </section>
@@ -187,15 +188,15 @@
           alt="Логотип Pink"></a>
       <div class="footer-links__social social">
         <a href="https://twitter.com" class="social__link social__link--twitter">
-          <svg class="social-icon social-icon--twitter" width="18" height="14"></svg>
+          <svg class="social-icon" width="18" height="14"></svg>
           <span class="visually-hidden">Twitter</span>
         </a>
         <a href="https://www.facebook.com" class="social__link social__link--facebook">
-          <svg class="social-icon social-icon--facebook" width="9" height="18"></svg>
+          <svg class="social-icon" width="9" height="18"></svg>
           <span class="visually-hidden">Facebook</span>
         </a>
         <a href="http://www.youtube.com" class="social__link social__link--youtube">
-          <svg class="social-icon social-icon--youtube" width="15" height="13"></svg>
+          <svg class="social-icon" width="15" height="13"></svg>
           <span class="visually-hidden">Youtube</span>
         </a>
       </div>

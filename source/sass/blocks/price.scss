@@ -1,0 +1,67 @@
+.price {
+  padding: 0 20px;
+}
+
+.price__list {
+  margin-bottom: 45px;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+.price__title {
+  padding: 19px 55px;
+  min-width: 180px;
+  min-height: 94px;
+  color: $color-heading-text;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: $color-primary;
+  border: 2px solid $border-color;
+
+  &--blank {
+    background-color: transparent;
+  }
+
+  &--hide {
+    display: none;
+  }
+
+  &--hit {
+    position: relative;
+  }
+
+  &--hit::after {
+    content: "Хит";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    transform: rotate(-45deg);
+  }
+
+  &--hit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 74px;
+    width: 74px;
+    //hit-ribbon
+  }
+}
+
+.price__title-value {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.price__cell {
+  min-height: 60px;
+  border: 2px solid $border-color;
+  background-color: $table-background-color;
+
+  &--hide {
+    display: none;
+  }
+}
