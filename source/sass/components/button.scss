@@ -37,8 +37,8 @@
       background-color: $form-button-background-color--hover;
     }
 
-    &:active .button__text {
-      opacity: 0.3;
+    &:active {
+      color: rgba($form-button-text-color, 0.3);
     }
   }
 
