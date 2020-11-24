@@ -1,0 +1,36 @@
+.popup__inner {
+  padding: 52px 22px;
+
+  &--success {
+    background-color: $popup-background-color;
+  }
+}
+
+.popup__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $popup-heading-text;
+  text-align: center;
+}
+
+.popup__message {
+  text-align: center;
+}
+
+.popup__button {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $popup-button-text-color;
+  background-color: $popup-button-background-color;
+
+  &:hover {
+    background-color: $form-button-background-color--hover;
+  }
+
+  &:active {
+    background-color: $form-button-background-color--hover;
+    color: rgba($form-button-text-color, 0.3);
+  }
+}

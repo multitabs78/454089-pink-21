@@ -1,5 +1,10 @@
 .contest-fieldset {
-  padding: 40px 20px 45px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $form-text-color;
   border: none;
 
   &:nth-child(even) {
@@ -8,7 +13,16 @@
 }
 
 .contest-fieldset__legend {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
   line-height: 18px;
   color: $form-label-color;
   text-transform: uppercase;
+
+  &--clear-mobile {
+    visibility: hidden;
+  }
 }

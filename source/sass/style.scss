@@ -18,8 +18,14 @@
 @import "blocks/price";
 @import "blocks/contacts";
 @import "blocks/social-icon";
+@import "blocks/contest";
 @import "blocks/contest-fieldset";
+@import "blocks/contest-textarea";
 @import "blocks/field";
 //Components
 @import "components/button";
 @import "components/carousel";
+@import "components/radio-field.scss";
+@import "components/checkbox-field.scss";
+@import "components/popup";
+@import "components/overlay";
