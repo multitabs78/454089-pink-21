@@ -32,7 +32,7 @@
 }
 
 .radio-field > .radio-field__input:checked + .radio-field__label-text::before {
-  background-image: url("../../img/svg/radio-checked.svg");
+  background-image: url("../img/svg/radio-checked.svg");
 }
 
 .radio-field > .radio-field__input:not(:checked):active + .radio-field__label-text::before,

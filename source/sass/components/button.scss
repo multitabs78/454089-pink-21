@@ -34,11 +34,8 @@
     }
 
     &:active {
-      background-color: $form-button-background-color--hover;
-    }
-
-    &:active {
       color: rgba($form-button-text-color, 0.3);
+      background-color: $form-button-background-color--hover;
     }
   }
 

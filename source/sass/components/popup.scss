@@ -1,6 +1,5 @@
 .popup__inner {
   padding: 52px 22px;
-  width: 100%;
 
   &--success {
     background-color: $popup-background-color;
@@ -32,9 +31,6 @@
 
   &:active {
     background-color: $form-button-background-color--hover;
-  }
-
-  &:active {
     color: rgba($form-button-text-color, 0.3);
   }
 }
