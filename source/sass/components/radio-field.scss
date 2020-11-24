@@ -23,7 +23,6 @@
   background-color: $form-input-background-color;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 50% 50%;
 }
 
 .radio-field > .radio-field__input:not(:checked) + .radio-field__label-text:hover::before,
