@@ -7,16 +7,51 @@
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  border: none;
+
+  &--download {
+    padding: 12px 0;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 25px;
+
+    &:hover {
+      color: $link-color;
+      background-color: white;
+    }
+  }
+
+  &--submit-form {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $form-button-text-color;
+    background-color: $form-button-background-color;
+
+    &:hover {
+      background-color: $form-button-background-color--hover;
+    }
+
+    &:active {
+      background-color: $form-button-background-color--hover;
+    }
+
+    &:active .button__text {
+      opacity: 0.3;
+    }
+  }
+
+  &--disabled {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $form-button-text-color;
+    background-color: $form-button-background-color--disabled;
+  }
 }
 
-.button--download {
-  padding: 12px 0;
-  background-color: transparent;
-  border: 3px solid white;
-  border-radius: 25px;
-
-  &:hover {
-    color: $link-color;
-    background-color: white;
-  }
+.button__text {
+  text-transform: uppercase;
 }

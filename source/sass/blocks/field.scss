@@ -1,0 +1,29 @@
+.field {
+  min-width: 100%;
+}
+
+.field__label {
+  line-height: 30px;
+  color: $form-label-color;
+  text-transform: uppercase;
+}
+
+.field__input {
+  padding: 5px 0 5px 10px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  color: $form-text-color;
+  border: 2px solid $form-input-border-color;
+  border-radius: 3px;
+  outline: none;
+
+  &:hover {
+    border-color: $form-input-border-color--hover;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $form-input-border-color--active;
+  }
+}

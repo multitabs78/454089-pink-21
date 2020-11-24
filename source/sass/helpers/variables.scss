@@ -6,6 +6,7 @@ $color-white: #ffffff;
 $color-pink: #d22856;
 $color-blue: #283645;
 $color-black: #000000;
+$color-transparent-black: rgba($color-black, 0.4);
 $color-grey--light: #f2f2f2;
 $color-grey: #e5e5e5;
 $color-green: #2aab6d;
@@ -21,5 +22,26 @@ $border-color: $color-grey;
 $table-background-color: $color-white;
 //Link
 $link-color: $color-pink;
-$link-color--hover: $link-color;
-$link-color--active: $link-color;
+$link-color--hover: $color-blue;
+$link-color--active: rgba($link-color, 0.3);
+//Form
+$form-background-color: $color-grey--light;
+$form-label-color: $color-pink;
+$form-text-color: $color-blue;
+$form-button-text-color: $color-white;
+$form-button-background-color: $color-green;
+$form-button-background-color--hover: $color-green--dark;
+$form-button-background-color--disabled: $color-grey;
+$form-input-border-color: $color-grey;
+$form-input-border-color--hover: $color-blue;
+$form-input-border-color--active: $color-pink;
+$form-input-background-color: $color-white;
+//Popup
+$popup-heading-text: $color-black;
+$popup-button-text-color: $color-white;
+$popup-background-color: $color-grey--light;
+$popup-button-background-color: $color-green;
+$popup-button-background-color--hover: $color-green--dark;
+$popup-button-background-color--disabled: $color-grey;
+//Overlay
+$overlay-color: $color-transparent-black;

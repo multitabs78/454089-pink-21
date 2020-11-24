@@ -1,0 +1,27 @@
+.contest-fieldset {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $form-text-color;
+  border: none;
+
+  &:nth-child(even) {
+    background-color: $color-grey--light;
+  }
+}
+
+.contest-fieldset__legend {
+  float: left;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  line-height: 18px;
+  color: $form-label-color;
+  text-transform: uppercase;
+
+  &--clear-mobile {
+    visibility: hidden;
+  }
+}
