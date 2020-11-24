@@ -1,16 +1,16 @@
-.radio-field>.radio-field__input {
+.radio-field > .radio-field__input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.radio-field>.radio-field__label-text {
+.radio-field > .radio-field__label-text {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.radio-field>.radio-field__label-text::before {
+.radio-field > .radio-field__label-text::before {
   content: "";
   display: inline-block;
   width: 41px;
@@ -26,16 +26,16 @@
   background-size: 50% 50%;
 }
 
-.radio-field>input:not(:checked)+.radio-field__label-text:hover::before,
-.radio-field>input:checked+.radio-field__label-text:hover::before {
+.radio-field > .radio-field__input:not(:checked) + .radio-field__label-text:hover::before,
+.radio-field > .radio-field__input:checked + .radio-field__label-text:hover::before {
   border-color: $form-input-border-color--hover;
 }
 
-.radio-field>input:checked+.radio-field__label-text::before {
+.radio-field > .radio-field__input:checked + .radio-field__label-text::before {
   background-image: url("../../img/svg/radio-checked.svg");
 }
 
-.radio-field>input:not(:checked):active+.radio-field__label-text::before,
-.radio-field>input:checked:active+.radio-field__label-text::before {
+.radio-field > .radio-field__input:not(:checked):active + .radio-field__label-text::before,
+.radio-field > .radio-field__input:checked:active + .radio-field__label-text::before {
   border-color: $form-input-border-color--active;
 }
