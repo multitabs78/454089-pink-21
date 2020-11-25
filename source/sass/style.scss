@@ -22,6 +22,10 @@
 @import "blocks/contest-fieldset";
 @import "blocks/contest-textarea";
 @import "blocks/field";
+@import "blocks/gallery";
+@import "blocks/user-photo";
+@import "blocks/photo-upload";
+@import "blocks/tool";
 //Components
 @import "components/button";
 @import "components/carousel";
@@ -29,3 +33,4 @@
 @import "components/checkbox-field.scss";
 @import "components/popup";
 @import "components/overlay";
+@import "components/button-like";

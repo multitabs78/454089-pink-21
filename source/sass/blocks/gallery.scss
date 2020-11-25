@@ -1,0 +1,8 @@
+.gallery__title {
+  line-height: 30px;
+  text-align: center;
+}
+
+.gallery__list {
+  @include reset-list;
+}

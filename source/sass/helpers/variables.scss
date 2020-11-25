@@ -1,6 +1,7 @@
 //Base font
 $font-size-base: 14px;
 $line-height-base: 24px;
+$font-weight-base: 400;
 //Base colors
 $color-white: #ffffff;
 $color-pink: #d22856;
@@ -40,6 +41,25 @@ $form-input-border-color: $color-grey;
 $form-input-border-color--hover: $color-blue;
 $form-input-border-color--active: $color-pink;
 $form-input-background-color: $color-white;
+//User-photo
+$user-photo-tag-background-color: $color-pink;
+$user-photo-tag-color-text: $color-white;
+$user-photo-likes-color-text: $color-pink;
+$user-photo-upload-color: $color-pink;
+$user-photo-upload-color-text: $color-pink;
+$user-photo-upload-color-text--hover: $color-white;
+$user-photo-clear-color: rgba($color-blue, 0.1);
+$user-photo-clear-color--hover: rgba($color-blue, 0.3);
+$user-photo-clear-color--active: rgba($color-blue, 0.3);
+$user-photo-clear-color-text--active: rgba($color-white, 0.3);
+//Icon
+$icon-color--active: $color-pink;
+//Tool
+$control-bar-color: $color-blue;
+$control-bar-border-color: rgba($color-blue, 0.1);
+$control-toggle-border-color: $color-pink;
+$control-toggle-background-color: $color-white;
+$control-toggle-background-color--active: $color-pink;
 //Popup
 $popup-heading-text: $color-black;
 $popup-button-text-color: $color-white;
