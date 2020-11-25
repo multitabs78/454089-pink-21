@@ -1,6 +1,7 @@
 .button {
   display: block;
   margin: 0;
+  margin-bottom: 12px;
   width: 100%;
   color: inherit;
   font-size: 18px;
@@ -23,10 +24,9 @@
 
   &--submit-form {
     padding: 10px;
-    font-size: 18px;
     line-height: 30px;
-    font-weight: 700;
     color: $form-button-text-color;
+    text-transform: uppercase;
     background-color: $form-button-background-color;
 
     &:hover {
@@ -39,6 +39,42 @@
     }
   }
 
+  &--upload {
+    padding: 12px 0;
+    color: $user-photo-upload-color-text;
+    background-color: transparent;
+    border: 3px solid $user-photo-upload-color;
+    border-radius: 25px;
+
+    &:hover {
+      color: $user-photo-upload-color-text--hover;
+      background-color: $user-photo-upload-color;
+    }
+
+    &:active {
+      color: rgba($user-photo-upload-color-text--hover, 0.3);
+    }
+  }
+
+  &--clear {
+    padding: 12px 0;
+    color: $user-photo-clear-color;
+    background-color: transparent;
+    border: 3px solid $user-photo-clear-color;
+    border-radius: 25px;
+
+    &:hover {
+      color: $user-photo-clear-color--hover;
+      border: 3px solid $user-photo-clear-color--hover;
+    }
+
+    &:active {
+      color: $user-photo-upload-color-text--hover;
+      background-color: $user-photo-clear-color--active;
+      border: 3px solid $user-photo-clear-color--hover;
+    }
+  }
+
   &--disabled {
     padding: 10px;
     font-size: 18px;
@@ -47,8 +83,4 @@
     color: $form-button-text-color;
     background-color: $form-button-background-color--disabled;
   }
-}
-
-.button__text {
-  text-transform: uppercase;
 }

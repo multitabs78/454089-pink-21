@@ -1,0 +1,56 @@
+.user-photo__image {
+  width: 280px;
+  height: auto;
+
+  &--of-the-day {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.user-photo {
+  margin-bottom: 20px;
+
+  &--of-the-day {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.user-photo__tag-wrapper {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  min-width: 140px;
+  min-height: 36px;
+}
+
+.user-photo__tag {
+  padding: 13px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: $user-photo-tag-color-text;
+  text-transform: uppercase;
+  background-color: $user-photo-tag-background-color;
+}
+
+.user-photo__name {
+  font-weight: 700;
+}
+
+.user-photo__post-time {
+  font-weight: 300;
+}
+
+.user-photo__text {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: $font-weight-base;
+}
+
+.user-photo__likes-count {
+  font-size: 12px;
+  color: $user-photo-likes-color-text;
+  text-transform: uppercase;
+}
