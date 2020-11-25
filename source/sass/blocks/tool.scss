@@ -1,0 +1,73 @@
+.tool__icon-list {
+  @include reset-list;
+}
+
+.tool__button {
+  background-color: transparent;
+  border: none;
+  opacity: 0.6;
+
+  &--active {
+    opacity: 1;
+
+    & .icon {
+      fill: $icon-color--active;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+//Tool Controls
+
+
+.tool__bar-list {
+  @include reset-list;
+}
+
+.tool__bar-item {
+  width: 100%;
+  border-bottom: 1px solid $control-bar-border-color;
+}
+
+.tool__controls-scale {
+  position: relative;
+  min-height: 50px;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+.tool__controls-bar {
+  height: 2px;
+  background-color: $control-bar-color;
+}
+
+.tool__controls-toggle {
+  position: absolute;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 2px solid $control-toggle-border-color;
+  border-radius: 50%;
+  background-color: $control-toggle-background-color;
+  cursor: pointer;
+
+  &:active {
+    background-color: $control-toggle-background-color--active;
+  }
+
+  &--crop {
+    right: 33%;
+  }
+
+  &--fill {
+    right: 80%;
+  }
+
+  &--contrast {
+    right: 42%;
+  }
+}
