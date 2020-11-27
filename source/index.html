@@ -10,10 +10,10 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__link">
-      <img class="page-header__logo" src="http://placehold.it/74x23" width="74" height="23" alt="Логотип Pink">
-    </a>
     <nav class="page-header__nav main-nav">
+      <a class="page-header__link">
+        <img class="page-header__logo" src="http://placehold.it/74x23" width="74" height="23" alt="Логотип Pink">
+      </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -33,7 +33,8 @@
 
     <div class="page-title">
       <h1 class="page-title__heading">Взгляните на жизнь иначе!</h1>
-      <img src="http://placehold.it/320x286" width="320" height="286" alt="Пример работы приложения Pink">
+      <img class="page-title__image" src="http://placehold.it/320x286" width="320" height="286"
+        alt="Пример работы приложения Pink">
       <div class="page-title__market-links">
         <a class="button button--download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
         <ul class="page-title__list market-list">
@@ -56,7 +57,7 @@
             </a>
           </li>
         </ul>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="page-title__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
   </header>
@@ -99,6 +100,7 @@
         <div class="testimonials__list carousel__list">
           <blockquote class="testimonials__item carousel-item">
             <cite class="testimonials__author">Николай Петров</cite>
+            <p class="testimonials__author-info">25 лет, водитель трамвая</p>
             <p class="testimonials__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
               привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>

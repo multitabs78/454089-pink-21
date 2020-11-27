@@ -1,5 +1,10 @@
 .price {
   padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
 }
 
 .price__list {
@@ -20,10 +25,15 @@
 
   &--blank {
     background-color: transparent;
+    border: none;
   }
 
   &--hide {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 
   &--hit {
@@ -62,6 +72,16 @@
   background-color: $table-background-color;
 
   &--hide {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+    }
+  }
+}
+
+.price__toggles {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

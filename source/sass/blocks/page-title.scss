@@ -1,6 +1,16 @@
 .page-title {
   padding: 0 20px;
   min-height: 170px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: $desktop-width) {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
 }
 
 .page-title__heading {
@@ -10,6 +20,28 @@
   line-height: 120%;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+  }
+}
+
+.page-title__image {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+  }
+}
+
+.page-title__market-links {
+  background-color: $color-title-background;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+    background-color: transparent;
+  }
 }
 
 .page-title__text {
