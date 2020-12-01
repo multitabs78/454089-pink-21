@@ -1,20 +1,26 @@
 .page-title {
-  padding: 0 20px;
   min-height: 170px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: "page-title__heading page-title__image"
+      "page-title__list page-title__image";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 0 20px;
+    min-height: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 130px;
-    padding-left: 130px;
+    grid-template-rows: minmax(300px, 40%) auto;
+    grid-template-columns: minmax(300px, 40%) auto;
+    padding: 0 130px;
+    min-height: 740px;
   }
 }
 
 .page-title__heading {
+  grid-area: page-title__heading;
   padding: 0;
   margin: 0;
   font-size: 24px;
@@ -28,21 +34,23 @@
 }
 
 .page-title__image {
+  grid-area: page-title__image;
   width: 100%;
   height: auto;
-
-  @media (min-width: $tablet-width) {
-    max-width: 50%;
-  }
 }
 
 .page-title__market-links {
+  padding: 0 20px;
   background-color: $color-title-background;
 
   @media (min-width: $tablet-width) {
-    max-width: 50%;
+    padding: 0;
     background-color: transparent;
   }
+}
+
+.page-title__list {
+  grid-area: page-title__list;
 }
 
 .page-title__text {
