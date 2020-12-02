@@ -1,24 +1,51 @@
 .contacts {
   padding: 0 20px;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
 }
 
 .contacts__title {
+  width: 100%;
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
+  text-align: center;
+}
+
+.contacts__inner {
+  display: inline-block;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 33%;
+  }
 }
 
 .contacts__text {
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
 }
 
 .contacts__link {
+  display: block;
   color: $link-color;
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
+  text-align: center;
   text-decoration: none;
 
   &--email:hover {

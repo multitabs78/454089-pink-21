@@ -1,10 +1,23 @@
 .testimonials {
   padding: 50px 20px 60px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 130px;
+    padding-left: 130px;
+    background-image: url("../img/quotes.png");
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
 
 .testimonials__item {
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .testimonials__author {
@@ -13,4 +26,41 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
+}
+
+.testimonials__author-info {
+  display: none;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.testimonials__text {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.testimonials__next {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
+.testimonials__previous {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
+.testimonials__toggles {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

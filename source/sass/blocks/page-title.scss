@@ -1,15 +1,54 @@
 .page-title {
-  padding: 0 20px;
   min-height: 170px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template: "page-title__heading page-title__image"
+      "page-title__list page-title__image";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: minmax(300px, 40%) auto;
+    grid-template-columns: minmax(300px, 40%) auto;
+    padding: 0 130px;
+  }
 }
 
 .page-title__heading {
+  grid-area: page-title__heading;
   padding: 0;
   margin: 0;
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+  }
+}
+
+.page-title__image {
+  grid-area: page-title__image;
+  width: 100%;
+  height: auto;
+}
+
+.page-title__market-links {
+  padding: 0 20px;
+  background-color: $color-title-background;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.page-title__list {
+  grid-area: page-title__list;
 }
 
 .page-title__text {

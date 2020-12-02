@@ -3,3 +3,8 @@
   padding-left: $padding-left;
   list-style: none;
 }
+
+@mixin outline($outline-color) {
+  outline: 5px solid rgba($outline-color, 0.8);
+  outline-offset: -5px;
+}

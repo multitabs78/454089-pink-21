@@ -1,6 +1,31 @@
 .research {
   display: none;
-  padding-top: 54px;
+  padding: 0 20px;
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("http://placehold.it/238x276");
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+    background-image: url("http://placehold.it/298x345");
+    background-color: $color-section-background;
+  }
+}
+
+.research__wrapper {
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 66%;
+  }
 }
 
 .research__title {
