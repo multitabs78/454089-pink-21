@@ -7,8 +7,69 @@
   color: $form-text-color;
   border: none;
 
+  @media (min-width: $tablet-width) {
+    border: 2px solid $form-input-border-color;
+    border-radius: 3px;
+  }
+
   &:nth-child(even) {
     background-color: $color-grey--light;
+
+    @media (min-width: $tablet-width) {
+      background-color: white;
+    }
+  }
+
+  &--name {
+    grid-area: name;
+    border: none;
+
+    & .field {
+      @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &--achiviments {
+    grid-area: achiviments;
+  }
+
+  &--contacts {
+    grid-area: contacts;
+
+    & .field {
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 45%;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &--app {
+    grid-area: app;
+  }
+
+  &--emotion {
+    grid-area: emotion;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 60px;
+    }
   }
 }
 
@@ -22,7 +83,17 @@
   color: $form-label-color;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    float: none;
+    width: auto;
+    text-align: center;
+  }
+
   &--clear-mobile {
     visibility: hidden;
+
+    @media (min-width: $tablet-width) {
+      visibility: visible;
+    }
   }
 }

@@ -8,6 +8,7 @@
   border-radius: 3px;
   outline: none;
   resize: none;
+  box-sizing: border-box;
 
   &:hover {
     border-color: $form-input-border-color--hover;
