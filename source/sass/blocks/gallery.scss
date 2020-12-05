@@ -5,4 +5,10 @@
 
 .gallery__list {
   @include reset-list;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
 }

@@ -10,10 +10,12 @@
 
 .user-photo {
   margin-bottom: 20px;
+  width: 300px;
+  background-color: $user-photo-background-color;
 
   &--of-the-day {
     position: relative;
-    width: 100%;
+    min-width: 100%;
     height: auto;
   }
 }

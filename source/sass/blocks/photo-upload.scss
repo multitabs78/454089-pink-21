@@ -2,6 +2,31 @@
   text-align: center;
 }
 
+.photo-upload__form {
+  background-color: $form-background-color;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template: "label tools"
+      "label buttons";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.photo-upload__tools {
+  grid-area: tools;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.photo-upload__label {
+  grid-area: label;
+}
+
 .photo-upload__input {
   width: 0.1px;
   height: 0.1px;
@@ -9,4 +34,13 @@
   overflow: hidden;
   position: absolute;
   z-index: -1;
+}
+
+.photo-upload__buttons-wrapper {
+  grid-area: buttons;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

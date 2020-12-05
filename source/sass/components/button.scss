@@ -54,6 +54,10 @@
     &:active {
       color: rgba($user-photo-upload-color-text--hover, 0.3);
     }
+
+    @media (min-width: $desktop-width) {
+      min-width: 180px;
+    }
   }
 
   &--clear {
@@ -72,6 +76,10 @@
       color: $user-photo-upload-color-text--hover;
       background-color: $user-photo-clear-color--active;
       border: 3px solid $user-photo-clear-color--hover;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 180px;
     }
   }
 
