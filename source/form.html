@@ -10,13 +10,13 @@
 
 <body class="page-body">
   <header class="page-header">
+    <a class="page-header__link main-link" href="index.html">
+      <img class="page-header__logo" src="http://placehold.it/74x23" width="74" height="23" alt="Логотип Pink">
+    </a>
+    <button class="page-header__nav-toggle main-nav-toggle" type="button">
+      <span class="visually-hidden"><span class="visually-hidden">Меню</span></span>
+    </button>
     <nav class="page-header__nav main-nav">
-      <a class="page-header__link" href="index.html">
-        <img class="page-header__logo" src="http://placehold.it/74x23" width="74" height="23" alt="Логотип Pink">
-      </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden"><span class="visually-hidden">Меню</span></span>
-      </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -47,17 +47,17 @@
       </p>
       <form class="form contest__form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="form__fieldset contest-fieldset contest-fieldset--name">
-          <div class="field">
+          <div class="field contest__field-name">
             <label class="field__label" for="surname">Фамилия:</label>
             <input class="field__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
           </div>
 
-          <div class="field">
+          <div class="field contest__field-name">
             <label class="field__label" for="name">Имя:</label>
             <input class="field__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
           </div>
 
-          <div class="field">
+          <div class="field contest__field-name">
             <label class="field__label" for="patronymic">Отчество:</label>
             <input class="field__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
           </div>
@@ -100,14 +100,14 @@
 
         <fieldset class="form__fieldset contest-fieldset contest-fieldset--contacts">
           <legend class="contest-fieldset__legend contest-fieldset__legend--clear-mobile">Контактная информация</legend>
-          <div class="field">
+          <div class="field contest__field-contacts">
             <label class="field__label" for="phone">Номер телефона</label>
             <input class="field__input field__input--contacts" type="tel" name="phone" id="phone"
               pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
               placeholder="Номер, пожалуйста">
           </div>
 
-          <div class="field">
+          <div class="field contest__field-contacts">
             <label class="field__label" for="email">Адрес почты</label>
             <input class="field__input field__input--contacts" type="email" name="email" id="email"
               placeholder="Введите почту*" required>

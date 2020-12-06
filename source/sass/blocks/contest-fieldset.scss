@@ -23,15 +23,6 @@
   &--name {
     grid-area: name;
     border: none;
-
-    & .field {
-      @media (min-width: $tablet-width) {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-bottom: 30px;
-      }
-    }
   }
 
   &--achiviments {
@@ -40,17 +31,6 @@
 
   &--contacts {
     grid-area: contacts;
-
-    & .field {
-      @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 45%;
-      }
-    }
 
     @media (min-width: $desktop-width) {
       display: flex;
