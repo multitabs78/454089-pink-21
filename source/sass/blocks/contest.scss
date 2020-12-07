@@ -29,7 +29,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template:
       "name app"
       "contacts contacts"
@@ -39,6 +38,26 @@
     grid-template-rows: repeat(5, auto);
     grid-template-columns: 50% 50%;
     padding: 0 130px;
+  }
+}
+
+.contest__field-name {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+.contest__field-contacts {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
   }
 }
 
