@@ -9,25 +9,6 @@
   }
 }
 
-.main-nav__toggle {
-  width: 23px;
-  height: 23px;
-  padding: 23px;
-  border: none;
-  background-image: url("../img/svg/close-menu-btn.svg");
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  &:hover {
-    fill: $color-secondary;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .main-nav__list {
   @include reset-list;
 
