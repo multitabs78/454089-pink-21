@@ -9,11 +9,13 @@
 }
 
 .user-photo {
+  justify-self: center;
+  align-self: center;
   margin-bottom: 20px;
-  width: 300px;
   background-color: $user-photo-background-color;
 
   &--of-the-day {
+    grid-column: 1 / -1;
     position: relative;
     min-width: 100%;
     height: auto;
