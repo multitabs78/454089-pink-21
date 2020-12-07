@@ -15,6 +15,21 @@
     grid-template-columns: minmax(300px, 40%) auto;
     padding: 0 130px;
   }
+
+  &--title-only {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 170px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 330px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 280px;
+    }
+  }
 }
 
 .page-title__heading {
