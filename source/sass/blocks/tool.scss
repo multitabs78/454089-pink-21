@@ -1,5 +1,12 @@
 .tool__icon-list {
   @include reset-list;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .tool__button {
@@ -25,11 +32,26 @@
 
 .tool__bar-list {
   @include reset-list;
+  width: 100%;
 }
 
 .tool__bar-item {
   width: 100%;
   border-bottom: 1px solid $control-bar-border-color;
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      border: none;
+    }
+  }
+
+  &--hide {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .tool__controls-scale {

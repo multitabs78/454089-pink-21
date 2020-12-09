@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header">
     <a class="page-header__logo main-logo" href="index.html">
       <img src="http://placehold.it/74x23" width="74" height="23" alt="Логотип Pink">
@@ -32,8 +32,8 @@
       </ul>
     </nav>
 
-    <div class="page-title">
-      <h1 class="page-title__heading">Фотографии пользователей</h1>
+    <div class="page-title--title-only">
+      <h1 class="page-title__heading">Фотографии <br>пользователей</h1>
     </div>
   </header>
 
@@ -176,7 +176,7 @@
         <p class="photo-upload__caption">Затмите их всех!<br>
           Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <form action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
+      <form class="form photo-upload__form" action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
         <label class="photo-upload__label" for="photo-upload"><img class="photo-upload__image"
             src="http://placehold.it/280x374" alt="Заснеженная дорога"></label>
         <input class="photo-upload__input" id="photo-upload" type="file" accept="image/*">
@@ -219,7 +219,7 @@
           </ul>
 
           <ul class="tool__bar-list">
-            <li class="tool__bar-item tool__bar-item--crop tool__bar-item--hide">
+            <li class="tool__bar-item tool__bar-item--crop">
               <div class="tool__controls-scale">
                 <div class="tool__controls-bar"></div>
                 <div class="tool__controls-toggle tool__controls-toggle--crop"></div>

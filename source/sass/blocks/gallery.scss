@@ -5,4 +5,15 @@
 
 .gallery__list {
   @include reset-list;
+
+  display: grid;
+  grid-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
