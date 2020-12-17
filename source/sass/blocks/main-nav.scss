@@ -1,11 +1,24 @@
 .main-nav {
-  width: 100%;
+  //width: 100%;
   background-color: $color-primary;
 
   @media (min-width: $desktop-width) {
     display: flex;
     min-height: 110px;
-    background-color: $color-title-background--transparent;
+    padding-right: 130px;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    background-color: transparent;
   }
 }
 
@@ -19,8 +32,10 @@
 }
 
 .main-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 1px;
-  min-height: 63px;
   box-shadow: 0 1px 0 0 black, inset 0 1px 0 0 rgba(white, 0.15);
 
   @media (min-width: $desktop-width) {
@@ -30,7 +45,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 25px 0;
+  padding: 16px 0;
   color: inherit;
   font-size: 18px;
   line-height: 32px;

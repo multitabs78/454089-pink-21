@@ -3,7 +3,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template: "page-title__heading page-title__image"
+    grid-template:
+      "page-title__heading page-title__image"
       "page-title__list page-title__image";
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
@@ -34,7 +35,9 @@
 
 .page-title__heading {
   grid-area: page-title__heading;
-  padding: 0;
+  align-self: center;
+  justify-self: center;
+  padding: 23px 20px;
   margin: 0;
   font-size: 24px;
   line-height: 120%;
@@ -42,7 +45,12 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    max-width: 50%;
+    padding: 0;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
   }
 }
 
@@ -53,7 +61,7 @@
 }
 
 .page-title__market-links {
-  padding: 0 20px;
+  padding: 20px 20px;
   background-color: $color-title-background;
 
   @media (min-width: $tablet-width) {
@@ -68,4 +76,5 @@
 
 .page-title__text {
   font-weight: 300;
+  text-align: center;
 }

@@ -1,5 +1,5 @@
 .features {
-  padding: 46px 20px 0;
+  padding: 40px 20px 0;
   display: flex;
   flex-direction: column;
 
@@ -15,7 +15,8 @@
 .features__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template: "features__title features__title"
+    grid-template:
+      "features__title features__title"
       "features__images features__list";
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 2fr 2fr;
@@ -23,21 +24,37 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template: "features__title"
+    grid-template:
+      "features__title"
       "features__images"
       "features__list";
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr;
   }
 }
 
-.features__title {
+.features__title-container {
   grid-area: features__title;
+  padding-bottom: 75px;
+}
+
+.features__title {
   margin: 0;
   padding: 0;
+  padding-bottom: 26px;
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .features__list {
@@ -47,9 +64,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding-bottom: 60px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -64,9 +83,15 @@
 }
 
 .features__item-title {
+  margin: 14px 0;
   color: $color-secondary-text;
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
+}
+
+.features__text {
+  text-align: center;
 }
 
 .features__images-list {

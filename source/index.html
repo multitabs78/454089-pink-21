@@ -9,12 +9,15 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <nav class="page-header__nav main-nav">
-      <a class="page-header__link">
-        <img class="page-header__logo" src="http://placehold.it/74x23" width="74" height="23" alt="Логотип Pink">
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+  <header class="page-header page-header--menu-bar page-header--no-js">
+    <a class="page-header__link">
+      <img class="page-header__logo main-logo" src="http://placehold.it/74x23" width="74" height="23"
+        alt="Логотип Pink">
+    </a>
+    <button class="page-header__nav-toggle main-nav-toggle main-nav-toggle--closed" type="button">
+      <span class="visually-hidden">Меню</span>
+    </button>
+    <nav class="page-header__nav main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--current">Главная</a>
@@ -31,7 +34,7 @@
       </ul>
     </nav>
 
-    <div class="page-title">
+    <div class="page-header__title page-title">
       <h1 class="page-title__heading">Взгляните на жизнь иначе!</h1>
       <img class="page-title__image" src="http://placehold.it/320x286" width="320" height="286"
         alt="Пример работы приложения Pink">
@@ -63,8 +66,12 @@
   </header>
   <main class="page-main">
     <section class="features">
+      <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="features__wrapper">
-        <h2 class="features__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <div class="features__title-container">
+          <p class="features__title features__title--first">Устали от серости мегаполиса?</p>
+          <p class="features__title features__title--second"> Нам есть, что вам <br>предложить!</p>
+        </div>
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__item-title">Поднимает настроение</h3>
@@ -223,6 +230,7 @@
     </div>
   </footer>
 
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

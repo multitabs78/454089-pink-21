@@ -1,4 +1,10 @@
 .footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 280px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -9,4 +15,10 @@
     padding-right: 130px;
     padding-left: 130px;
   }
+}
+
+.footer-links__developer-text {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }

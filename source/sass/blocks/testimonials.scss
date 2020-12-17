@@ -1,5 +1,5 @@
 .testimonials {
-  padding: 50px 20px 60px;
+  padding: 36px 20px 60px;
 
   @media (min-width: $desktop-width) {
     padding-right: 130px;
@@ -8,6 +8,10 @@
     background-position: top;
     background-repeat: no-repeat;
   }
+}
+
+.testimonials__list {
+  padding-bottom: 18px;
 }
 
 .testimonials__item {
@@ -21,11 +25,13 @@
 }
 
 .testimonials__author {
+  display: block;
   padding: 0;
   color: $color-secondary-text;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
+  text-align: center;
 }
 
 .testimonials__author-info {
@@ -38,6 +44,9 @@
 }
 
 .testimonials__text {
+  line-height: 30px;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     order: -1;
   }
