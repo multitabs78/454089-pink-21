@@ -2,7 +2,6 @@
   display: block;
   margin: 0;
   margin-bottom: 12px;
-  min-width: 280px;
   color: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -11,11 +10,19 @@
   border: none;
 
   &--download {
+    align-self: center;
     margin-bottom: 33px;
     padding: 12px 0;
+    min-width: 280px;
+    font-size: 21px;
     background-color: transparent;
     border: 3px solid white;
     border-radius: 25px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      min-width: 300px;
+    }
 
     &:hover {
       color: $link-color;

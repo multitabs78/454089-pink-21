@@ -3,7 +3,7 @@
 @import "helpers/visually-hidden";
 @import "helpers/mixins";
 // Global
-@import "global/fonts";
+@import "fonts/fonts";
 //Blocks
 @import "blocks/page";
 @import "blocks/page-body";
@@ -28,11 +28,12 @@
 @import "blocks/user-photo";
 @import "blocks/photo-upload";
 @import "blocks/tool";
+@import "blocks/section-title";
 //Components
-@import "components/button";
-@import "components/carousel";
-@import "components/radio-field.scss";
-@import "components/checkbox-field.scss";
-@import "components/popup";
-@import "components/overlay";
-@import "components/button-like";
+@import "blocks/button";
+@import "blocks/carousel";
+@import "blocks/radio-field.scss";
+@import "blocks/checkbox-field.scss";
+@import "blocks/popup";
+@import "blocks/overlay";
+@import "blocks/button-like";

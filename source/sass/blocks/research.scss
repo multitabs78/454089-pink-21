@@ -1,20 +1,23 @@
 .research {
   display: none;
+  margin-bottom: 72px;
   padding: 0 20px;
 
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
+    padding-top: 70px;
     background-image: url("http://placehold.it/238x276");
-    background-position: left;
+    background-position: 20px 70px;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
+    padding: 95px 130px 111px;
     background-image: url("http://placehold.it/298x345");
     background-color: $color-section-background;
+    background-position: 130px 27px;
   }
 }
 
@@ -24,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 66%;
+    max-width: 60%;
   }
 }
 
@@ -33,9 +36,29 @@
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    max-width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.research__text {
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
 }
 
 .research__link {
   color: $link-color;
   text-decoration: underline;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }

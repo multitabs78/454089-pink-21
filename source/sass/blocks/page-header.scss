@@ -7,12 +7,14 @@
     "link toggle"
     "nav nav"
     "title title";
+  margin-bottom: 5px;
   color: $color-heading-text;
   background-color: $color-primary;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: 110px auto auto;
+    margin-bottom: 20px;
     min-height: 620px;
   }
 
@@ -21,6 +23,7 @@
     grid-template-areas:
       "link nav"
       "title title";
+    margin-bottom: 75px;
   }
 
   &--no-js::before {
