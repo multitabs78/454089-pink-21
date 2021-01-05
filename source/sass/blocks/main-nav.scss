@@ -2,11 +2,11 @@
   //width: 100%;
   background-color: $color-primary;
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    min-height: 110px;
-    padding-right: 130px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   display: flex;
+  //   min-height: 110px;
+  //   padding-right: 130px;
+  // }
 
   &--opened {
     display: block;
@@ -18,7 +18,10 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    min-height: 110px;
+    // padding-right: 130px;
     background-color: transparent;
+    box-sizing: border-box;
   }
 }
 

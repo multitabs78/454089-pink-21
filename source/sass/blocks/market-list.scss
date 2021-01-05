@@ -4,5 +4,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: space-evenly;
+}
+
+.market-list__item a {
+  display: flex;
+  max-height: inherit;
 }

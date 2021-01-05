@@ -13,17 +13,23 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: calc((100% - 660px) / 2) min-content auto calc((100% - 660px) / 2);
     grid-template-rows: 110px auto auto;
+    grid-template-areas:
+      ". link toggle ."
+      ". nav nav ."
+      ". title title .";
     margin-bottom: 20px;
     min-height: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: calc((100% - 960px) / 2) repeat(2, auto) calc((100% - 960px) / 2);
     grid-template-areas:
-      "link nav"
-      "title title";
+      ". link nav ."
+      ". title title .";
     margin-bottom: 75px;
+    min-height: 856px;
   }
 
   &--no-js::before {
@@ -63,17 +69,18 @@
 
 .page-header__link {
   z-index: 1;
+  display: flex;
   grid-area: link;
   align-self: center;
   justify-self: start;
-  padding-left: 20px;
-
-  @media (min-width: $desktop-width) {
-    padding-left: 130px;
-  }
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 120px;
 }
 
 .page-header__logo {
+  display: block;
   width: 74px;
   height: 23px;
 }

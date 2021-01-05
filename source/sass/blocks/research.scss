@@ -1,33 +1,41 @@
 .research {
   display: none;
   margin-bottom: 72px;
-  padding: 0 20px;
+  padding: 0;
 
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 70px;
+    display: grid;
+    grid-template-columns: calc((100% - 660px) / 2) repeat(2, 1fr) calc((100% - 660px) / 2);
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+      ". . . ."
+      ". . research .";
     background-image: url("http://placehold.it/238x276");
     background-position: 20px 70px;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 95px 130px 111px;
+    grid-template-rows: 95px 1fr;
+    grid-template-columns: calc((100% - 960px) / 2) 1fr 1fr calc((100% - 960px) / 2);
     background-image: url("http://placehold.it/298x345");
     background-color: $color-section-background;
-    background-position: 130px 27px;
+    background-position: 130px 95px;
   }
 }
 
 .research__wrapper {
+  grid-area: research;
+
   @media (min-width: $tablet-width) {
-    max-width: 50%;
+    min-height: 276px;
+    min-width: 310px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 60%;
+    min-height: 345px;
+    min-width: 530px;
   }
 }
 
