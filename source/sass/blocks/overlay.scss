@@ -2,7 +2,6 @@
   display: none;
   position: fixed;
   z-index: 20;
-  //display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -14,4 +13,10 @@
   background-color: $overlay-color;
   opacity: 0;
   visibility: hidden;
+
+  &--visible {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
 }

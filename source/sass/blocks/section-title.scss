@@ -11,4 +11,10 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
   }
+
+  &--not-front-page {
+    @media (min-width: $tablet-width) {
+      font-size: 50px;
+    }
+  }
 }

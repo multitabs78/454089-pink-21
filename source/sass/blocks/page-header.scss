@@ -20,7 +20,6 @@
       ". nav nav ."
       ". title title .";
     margin-bottom: 20px;
-    min-height: 620px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +28,6 @@
       ". link nav ."
       ". title title .";
     margin-bottom: 75px;
-    min-height: 856px;
   }
 
   &--no-js::before {
@@ -64,6 +62,18 @@
 
   &--no-js .page-header__nav {
     display: block;
+  }
+
+  &--not-front-page {
+    margin-bottom: 45px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 394px;
+    }
   }
 }
 

@@ -13,21 +13,27 @@
 .radio-field > .radio-field__label::before {
   content: "";
   display: inline-block;
-  width: 41px;
-  height: 41px;
+  width: 35px;
+  height: 35px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 2px solid $form-input-border-color;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 30px;
   background-color: $form-input-background-color;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .radio-field__input:not(:checked) + .radio-field__label:hover::before,
-.radio-field__input:checked + .radio-field__label:hover::before {
+.radio-field__input:checked + .radio-field__label:hover::before,
+.radio-field__input:focus:not(:checked) + .radio-field__label::before,
+.radio-field__input:focus:checked + .radio-field__label::before {
   border-color: $form-input-border-color--hover;
 }
 

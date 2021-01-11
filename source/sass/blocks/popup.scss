@@ -1,29 +1,138 @@
+.popup {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: $popup-background-color;
+  box-shadow: 0 7px 15px rgba(#000000, 0.15);
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    //min-height: 365px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.popup__wrapper {
+  flex-grow: 1;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 306px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 465px;
+  }
+}
+
+.popup__success {
+  display: none;
+
+  &--visible {
+    display: flex;
+    min-height: 380px;
+    padding-top: 38px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 430px;
+    }
+
+    @media (min-width: $tablet-width) {
+      min-height: 375px;
+    }
+  }
+}
+
+.popup__failure {
+  display: none;
+
+  &--visible {
+    display: flex;
+    padding-top: 36px;
+    min-height: 290px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 360px;
+    }
+
+    @media (min-width: $tablet-width) {
+      min-height: 375px;
+    }
+  }
+}
+
 .popup__inner {
-  padding: 52px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  min-height: 120px;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    background-color: $popup-button-background-color;
+  }
 
   &--success {
-    background-color: $popup-background-color;
+    min-height: 163px;
+    background-color: $popup-button-background-color;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      border-radius: 0 0 5px 5px;
+      box-sizing: border-box;
+    }
   }
 }
 
 .popup__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 18px;
   font-weight: 700;
   color: $popup-heading-text;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .popup__message {
+  margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .popup__button {
-  padding: 10px;
+  display: block;
+  margin: 0;
+  padding: 17px 0;
+  min-width: 276px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: $popup-button-text-color;
-  background-color: $popup-button-background-color;
+  text-transform: uppercase;
+  background-color: $popup-button-color;
+  border-radius: 3px;
+  box-sizing: border-box;
 
   &:hover {
     background-color: $form-button-background-color--hover;
@@ -32,5 +141,15 @@
   &:active {
     background-color: $form-button-background-color--hover;
     color: rgba($form-button-text-color, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 300px;
+  }
+
+  &--success {
+    @media (min-width: $desktop-width) {
+      min-width: 460px;
+    }
   }
 }

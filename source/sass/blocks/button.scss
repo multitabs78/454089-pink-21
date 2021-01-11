@@ -36,11 +36,13 @@
   }
 
   &--submit-form {
-    padding: 10px;
+    padding: 17px;
+    width: 100%;
     line-height: 30px;
     color: $form-button-text-color;
     text-transform: uppercase;
     background-color: $form-button-background-color;
+    box-sizing: border-box;
 
     &:hover {
       background-color: $form-button-background-color--hover;
