@@ -1,15 +1,12 @@
-.field {
-  margin-bottom: 20px;
-}
-
 .field__label {
+  font-size: $font-size-base;
   line-height: 30px;
   color: $form-label-color;
   text-transform: uppercase;
 }
 
 .field__input {
-  padding: 5px 0 5px 10px;
+  padding: 15px 20px;
   width: 100%;
   font-size: 18px;
   line-height: 30px;
@@ -17,6 +14,7 @@
   border: 2px solid $form-input-border-color;
   border-radius: 3px;
   outline: none;
+  box-sizing: border-box;
 
   &:hover {
     border-color: $form-input-border-color--hover;
@@ -25,6 +23,10 @@
   &:focus,
   &:active {
     border-color: $form-input-border-color--active;
+
+    &--invalid {
+      border-color: red;
+    }
   }
 
   &--contacts {

@@ -13,8 +13,8 @@
 .checkbox-field > .checkbox-field__label::before {
   content: "";
   display: inline-block;
-  width: 39px;
-  height: 39px;
+  width: 35px;
+  height: 35px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 2px solid $form-input-border-color;
@@ -27,7 +27,9 @@
 }
 
 .checkbox-field__input:not(:checked) + .checkbox-field__label:hover::before,
-.checkbox-field__input:checked + .checkbox-field__label:hover::before {
+.checkbox-field__input:checked + .checkbox-field__label:hover::before,
+.checkbox-field__input:focus:not(:checked) + .checkbox-field__label::before,
+.checkbox-field__input:focus:checked + .checkbox-field__label::before {
   border-color: $form-input-border-color--hover;
 }
 
