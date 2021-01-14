@@ -1,3 +1,27 @@
 .page-footer {
-  padding: 50px 0 40px;
+  padding: 20px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
+}
+
+.page-footer__map {
+  margin-bottom: 20px;
+  height: 200px;
+  background-color: rgba(121, 31, 31, 0.151);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+    height: 502px;
+  }
 }

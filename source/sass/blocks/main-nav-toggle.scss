@@ -1,0 +1,29 @@
+.main-nav-toggle {
+  padding: 0;
+  width: 100px;
+  height: 100%;
+  border: none;
+  background-image: url("../img/svg/close-menu-btn.svg");
+  background-color: transparent;
+  background-position: 56px 22px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-position: 56px 43px;
+  }
+
+  &:hover {
+    fill: $color-secondary;
+  }
+
+  &--closed {
+    background-image: url("../img/svg/open-menu-btn.svg");
+    background-color: transparent;
+    background-position: 30px 21px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-position: 30px 43px;
+    }
+  }
+}

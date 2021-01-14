@@ -1,10 +1,32 @@
 .price {
+  display: grid;
+  grid-template-rows: 113px auto;
+  grid-template-areas:
+    "."
+    "price";
   min-width: 320px;
-  margin-bottom: 45px;
+  padding-bottom: 47px;
+  background-image: url("../img/grey-background.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -30px;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 93px auto;
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 154px auto;
+    padding-bottom: 60px;
+    background-position: 0 0;
+  }
 }
 
 .price__wrapper {
+  grid-area: price;
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   overflow: hidden;
@@ -19,6 +41,7 @@
 }
 
 .price__list {
+  margin-bottom: 35px;
   table-layout: auto;
   border-collapse: collapse;
 
@@ -29,12 +52,20 @@
 }
 
 .price__title {
-  padding: 19px 38px 16px;
+  padding: 13px 38px 25px;
   color: $color-heading-text;
   font-size: 16px;
   text-transform: uppercase;
   background-color: $color-primary;
   border: 2px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 20px 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 20px 18px;
+  }
 
   &--blank {
     background-color: transparent;
@@ -75,26 +106,67 @@
 }
 
 .price__title-value {
+  margin: 5px;
   font-size: 18px;
   font-weight: 300;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .price__cell {
   min-height: 60px;
   min-width: 280px;
+  padding: 14px;
   border: 2px solid $border-color;
   background-color: $table-background-color;
+  text-transform: uppercase;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px;
+  }
+
+  &--yes,
+  &--no {
+    background-repeat: no-repeat;
+    background-position: 92% 50%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 0;
+      background-position: 50% 50%;
+    }
+  }
+
+  &--yes {
+    background-image: url("../img/svg/yes.svg");
+  }
+
+
+  &--no {
+    background-image: url("../img/svg/no.svg");
+  }
 
   &--hide {
     display: none;
 
     @media (min-width: $tablet-width) {
       display: table-cell;
+      text-transform: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
     }
   }
 }
 
-.price__toggles {
+.price .price__toggles {
   @media (min-width: $tablet-width) {
     display: none;
   }

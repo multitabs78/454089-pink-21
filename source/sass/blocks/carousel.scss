@@ -1,4 +1,13 @@
+.carousel__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 65px;
+}
+
 .carousel__toggle {
+  position: relative;
   padding: 0;
   width: 6px;
   height: 6px;
@@ -6,6 +15,15 @@
   border-radius: 50%;
   opacity: 0.3;
   background-color: $carousel-button-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: -9px;
+    width: 25px;
+    height: 25px;
+  }
 
   &--current {
     width: 12px;
