@@ -1,8 +1,20 @@
 .contest__text {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 23px;
   padding: 0 20px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    max-width: 500px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
+    max-width: 800px;
+  }
 }
 
 .contest__text-hidden-mobile {
@@ -13,18 +25,27 @@
   }
 }
 
+.contest__text-desktop-only {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .contest__form {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template:
-      "name"
-      "app"
-      "contacts"
-      "achiviments"
-      "emotion"
-      "submit";
+      "name name"
+      "app app"
+      "contacts contacts"
+      "achiviments achiviments"
+      "emotion emotion"
+      "submit asterisk";
     grid-template-rows: repeat(6, auto);
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 47px;
     padding: 0 20px;
   }
 
@@ -34,33 +55,99 @@
       "contacts contacts"
       "achiviments achiviments"
       "emotion emotion"
-      "submit submit";
-    grid-template-rows: repeat(5, auto);
-    grid-template-columns: 50% 50%;
+      "submit asterisk";
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 74px;
+    grid-row-gap: 46px;
     padding: 0 130px;
   }
 }
 
+.contest-field__label {
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 18px;
+  }
+}
+
 .contest__field-name {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
   }
 }
 
 .contest__field-contacts {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 28px;
+
+    & .contest-field__label {
+      padding-top: 10px;
+      padding-left: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
     width: 45%;
   }
 }
 
 .contest__inner-submit {
   grid-area: submit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  max-width: 296px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 0;
+
+    & .button--submit-form {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contest__inner-required {
+  grid-area: asterisk;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    padding: 0;
+  }
+}
+
+.contest__form-required {
+  margin: 0;
+}
+
+.contest__form-asterisk {
+  color: $form-label-color;
 }

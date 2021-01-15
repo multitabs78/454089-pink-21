@@ -11,11 +11,11 @@ $color-pink: #d22856;
 $color-blue: #283645;
 $color-blue--dark: #1d2631;
 $color-black: #000000;
-$color-transparent-black: rgba($color-black, 0.3);
 $color-grey--light: #f2f2f2;
 $color-grey: #e5e5e5;
 $color-green: #2aab6d;
 $color-green--dark: #1c9b5e;
+$color-transparent-black: rgba($color-black, 0.15);
 //Interface colors
 $color-primary: $color-blue;
 $color-primary-text: $color-blue;
@@ -72,10 +72,12 @@ $control-toggle-background-color: $color-white;
 $control-toggle-background-color--active: $color-pink;
 //Popup
 $popup-heading-text: $color-black;
+$popup-background-color: $color-white;
+$popup-button-background-color: $color-grey--light;
 $popup-button-text-color: $color-white;
-$popup-background-color: $color-grey--light;
-$popup-button-background-color: $color-green;
-$popup-button-background-color--hover: $color-green--dark;
-$popup-button-background-color--disabled: $color-grey;
+$popup-button-color: $color-green;
+$popup-button-color--hover: $color-green--dark;
+$popup-button-color--disabled: $color-grey;
+$popup-shadow: $color-transparent-black;
 //Overlay
 $overlay-color: $color-transparent-black;
