@@ -7,6 +7,18 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.tool__icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
 }
 
 .tool__button {
@@ -56,9 +68,17 @@
 
 .tool__controls-scale {
   position: relative;
-  min-height: 50px;
-  padding: 10px 20px;
+  padding: 35px 20px;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 70px;
+    padding-left: 40px;
+  }
 }
 
 .tool__controls-bar {
@@ -68,7 +88,7 @@
 
 .tool__controls-toggle {
   position: absolute;
-  top: 4px;
+  top: 29px;
   width: 10px;
   height: 10px;
   padding: 0;
@@ -82,14 +102,30 @@
   }
 
   &--crop {
-    right: 33%;
+    right: 19%;
+
+    @media (min-width: $desktop-width) {
+      right: 68%;
+    }
   }
 
   &--fill {
     right: 80%;
+
+    @media (min-width: $desktop-width) {
+      right: 24%;
+    }
   }
 
   &--contrast {
     right: 42%;
+
+    @media (min-width: $desktop-width) {
+      right: 46%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 26px;
   }
 }
