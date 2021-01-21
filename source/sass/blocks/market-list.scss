@@ -8,7 +8,16 @@
   justify-content: space-evenly;
 }
 
+.market-list__item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
 .market-list__item a {
   display: flex;
-  max-height: inherit;
+  justify-content: space-around;
+  align-items: center;
+  width: 60px;
+  height: 60px;
 }

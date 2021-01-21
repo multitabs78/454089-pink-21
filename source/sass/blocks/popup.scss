@@ -20,6 +20,44 @@
   @media (min-width: $desktop-width) {
     width: 780px;
   }
+
+
+  &--success {
+    display: none;
+  }
+
+  &--failure {
+    display: none;
+  }
+
+  &--visible {
+    display: flex;
+    padding-top: 37px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 375px;
+    }
+
+    & .popup--success {
+      min-height: 380px;
+
+      @media (min-width: $tablet-width) {
+        min-height: 430px;
+      }
+
+      @media (min-width: $tablet-width) {
+        min-height: 375px;
+      }
+    }
+
+    & .popup--failure {
+      min-height: 290px;
+
+      @media (min-width: $tablet-width) {
+        min-height: 360px;
+      }
+    }
+  }
 }
 
 .popup__wrapper {
@@ -32,42 +70,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 465px;
-  }
-}
-
-.popup__success {
-  display: none;
-
-  &--visible {
-    display: flex;
-    min-height: 380px;
-    padding-top: 38px;
-
-    @media (min-width: $tablet-width) {
-      min-height: 430px;
-    }
-
-    @media (min-width: $tablet-width) {
-      min-height: 375px;
-    }
-  }
-}
-
-.popup__failure {
-  display: none;
-
-  &--visible {
-    display: flex;
-    padding-top: 36px;
-    min-height: 290px;
-
-    @media (min-width: $tablet-width) {
-      min-height: 360px;
-    }
-
-    @media (min-width: $tablet-width) {
-      min-height: 375px;
-    }
   }
 }
 

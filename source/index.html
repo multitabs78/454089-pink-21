@@ -35,7 +35,7 @@
     </nav>
 
     <div class="page-header__title page-title">
-      <h1 class="page-title__heading section-title">Взгляните на&nbsp;жизнь иначе!</h1>
+      <h1 class="page-title__heading section-title">Взгляните на&nbsp;жизнь <br class="tablet-only"> иначе!</h1>
       <img class="page-title__image" src="http://placehold.it/320x286" width="320" height="286"
         alt="Пример работы приложения Pink">
       <div class="page-title__market-links">
@@ -105,6 +105,7 @@
     </section>
 
     <section class="research">
+      <div class="research__image"></div>
       <div class="research__wrapper">
         <h2 class="research__title">Эффект на&nbsp;24 часа!</h2>
         <p class="research__text">Британские ученые провели исследования и&nbsp;доказали,
@@ -113,7 +114,7 @@
       </div>
     </section>
 
-    <section class="testimonials container">
+    <section class="testimonials">
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="testimonials__wrapper carousel">
         <div class="testimonials__list carousel__list">
@@ -198,7 +199,7 @@
       </div>
       <div class="contacts__inner contacts__inner--address">
         <p class="contacts__text">Приезжайте в гости:</p>
-        <address class="contacts__link">ул. Большая Конюшенная, 19/8</address>
+        <address class="contacts__link">ул. Большая <br>Конюшенная, 19/8</address>
       </div>
     </div>
     <div class="page-footer__map" id="map">
@@ -231,6 +232,8 @@
   </footer>
 
   <script src="js/main-nav.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=a92118a5-21e3-4a59-a547-75d981f29002"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
