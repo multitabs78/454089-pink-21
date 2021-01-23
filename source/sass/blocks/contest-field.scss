@@ -1,0 +1,49 @@
+.contest-field {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 53px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      flex-direction: column-reverse;
+      margin-bottom: 28px;
+
+      & .contest-field__label {
+        padding-top: 10px;
+        padding-left: 20px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+      width: 45%;
+    }
+  }
+}
+
+.contest-field__label {
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 18px;
+  }
+}

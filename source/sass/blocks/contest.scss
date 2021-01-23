@@ -63,54 +63,6 @@
   }
 }
 
-.contest-field__label {
-  padding-left: 25px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-right: 18px;
-  }
-}
-
-.contest__field-name {
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 50px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 53px;
-  }
-}
-
-.contest__field-contacts {
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 28px;
-
-    & .contest-field__label {
-      padding-top: 10px;
-      padding-left: 20px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
-    width: 45%;
-  }
-}
-
 .contest__inner-submit {
   grid-area: submit;
   display: flex;

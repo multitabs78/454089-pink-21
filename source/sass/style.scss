@@ -9,6 +9,7 @@
 @import "blocks/page";
 @import "blocks/page-body";
 @import "blocks/page-header";
+@import "blocks/main-logo";
 @import "blocks/page-title";
 @import "blocks/page-footer";
 @import "blocks/footer-links.scss";
@@ -23,6 +24,7 @@
 @import "blocks/social-icon";
 @import "blocks/contest";
 @import "blocks/contest-fieldset";
+@import "blocks/contest-field";
 @import "blocks/contest-textarea";
 @import "blocks/field";
 @import "blocks/gallery";
@@ -32,6 +34,7 @@
 @import "blocks/tool";
 @import "blocks/section-title";
 //Components
+@import "blocks/tablet-only";
 @import "blocks/button";
 @import "blocks/carousel";
 @import "blocks/radio-field.scss";

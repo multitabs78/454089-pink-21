@@ -21,6 +21,17 @@
   }
 }
 
+.footer-links__main-link {
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: inherit;
+    opacity: 0.3;
+  }
+}
+
 .footer-links__social {
   display: flex;
   justify-content: space-between;

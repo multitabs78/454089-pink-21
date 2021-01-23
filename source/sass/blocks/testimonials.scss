@@ -15,8 +15,12 @@
 }
 
 .testimonials__wrapper {
+  padding: 0 20px;
+
   @media (min-width: $desktop-width) {
     padding-top: 70px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
 
