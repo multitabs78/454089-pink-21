@@ -37,13 +37,14 @@
   grid-area: image;
 
   @media (min-width: $tablet-width) {
-    background-image: url("http://placehold.it/238x276");
+    background-image: url("../img/research-tablet.svg");
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("http://placehold.it/298x345");
+    background-image: url("../img/research-desktop.svg");
   }
 }
 

@@ -31,6 +31,8 @@ $border-color: $color-grey;
 $table-background-color: $color-white;
 //Carousel
 $carousel-button-color: rgba($color-blue, 0.3);
+$carousel-button-color--active: rgba($color-blue, 0.1);
+$carousel-button-color--hover: rgba($color-blue, 0.6);
 $carousel-button-color--current: $color-white;
 $carousel-button-border-color--current: $color-blue;
 //Link

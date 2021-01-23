@@ -15,6 +15,7 @@
   border-radius: 50%;
   opacity: 0.3;
   background-color: $carousel-button-color;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -25,6 +26,14 @@
     height: 25px;
   }
 
+  &:hover {
+    background-color: $carousel-button-color--hover;
+  }
+
+  &:active {
+    background-color: $carousel-button-color--active;
+  }
+
   &--current {
     width: 12px;
     height: 12px;
@@ -32,5 +41,14 @@
     background-color: $carousel-button-color--current;
     border: 3px solid $carousel-button-border-color--current;
     opacity: 1;
+
+
+    &:hover {
+      background-color: inherit;
+    }
+
+    &:active {
+      background-color: inherit;
+    }
   }
 }
