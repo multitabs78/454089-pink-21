@@ -71,7 +71,13 @@
       color: rgba($user-photo-upload-color-text--hover, 0.3);
     }
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+      min-width: 260px;
+    }
+
     @media (min-width: $desktop-width) {
+      margin-bottom: 12px;
       min-width: 180px;
     }
   }
@@ -93,6 +99,10 @@
       color: $user-photo-upload-color-text--hover;
       background-color: $user-photo-clear-color--active;
       border: 3px solid $user-photo-clear-color--hover;
+    }
+
+    @media (min-width: $tablet-width) {
+      min-width: 260px;
     }
 
     @media (min-width: $desktop-width) {

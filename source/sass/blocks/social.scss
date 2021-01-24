@@ -1,0 +1,7 @@
+.social {
+  padding: 14px 50px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}

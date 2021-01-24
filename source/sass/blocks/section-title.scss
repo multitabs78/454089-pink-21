@@ -10,11 +10,20 @@
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
+    line-height: 135%;
   }
 
   &--not-front-page {
     @media (min-width: $tablet-width) {
+      padding-left: 0;
+      padding-bottom: 67px;
       font-size: 50px;
+      line-height: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -25px;
+      padding-bottom: 0;
     }
   }
 }

@@ -6,6 +6,10 @@
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-evenly;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px 15px;
+  }
 }
 
 .market-list__item {

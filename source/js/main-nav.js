@@ -7,6 +7,7 @@ header.classList.remove('page-header--no-js');
 menuToggle.addEventListener('click', function (evt) {
   evt.preventDefault();
   menuToggle.classList.toggle('main-nav-toggle--closed');
+  menuToggle.classList.toggle('main-nav-toggle--opened');
   nav.classList.toggle('main-nav--opened');
   nav.classList.toggle('main-nav--closed');
   header.classList.toggle('page-header--menu-bar');
