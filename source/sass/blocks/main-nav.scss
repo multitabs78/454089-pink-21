@@ -66,6 +66,8 @@
 
     &--current {
       border-bottom: 2px solid $link-color--underline;
+      padding-bottom: 5px;
+      margin-bottom: 14px;
     }
 
     &--current:hover {

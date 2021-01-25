@@ -12,7 +12,7 @@
   background-color: $color-primary;
   background-size: 100%;
   background-image: url("../img/back-mobile.jpg");
-  background-position: 50% 50%;
+  background-position: 50% 260px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -29,7 +29,6 @@
     margin-bottom: 20px;
     background-image: url("../img/back-tablet.jpg");
     background-size: 100%;
-    background-position: 50% 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
@@ -50,14 +49,6 @@
     }
   }
 
-  &--no-js {
-    background-position: 50% 50%;
-
-    @media (min-width: $tablet-width) {
-      background-position: 50% -230%;
-    }
-  }
-
   &--no-js::before {
     display: none;
 
@@ -68,10 +59,10 @@
 
   &--menu-bar {
     background-position: 50% 0;
+  }
 
-    @media (min-width: $tablet-width) {
-      background-position: 50% 100%;
-    }
+  &--no-js {
+    background-position: 50% 260px;
   }
 
   &--menu-bar::before {
@@ -109,6 +100,7 @@
 
     @media (min-width: $desktop-width) {
       min-height: 394px;
+      background-position: 50% 0;
     }
   }
 }

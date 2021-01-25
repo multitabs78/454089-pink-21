@@ -37,6 +37,7 @@
   width: 280px;
   height: auto;
   vertical-align: middle;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 300px;

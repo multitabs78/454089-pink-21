@@ -23,10 +23,6 @@
   &:focus,
   &:active {
     border-color: $form-input-border-color--active;
-
-    &--invalid {
-      border-color: red;
-    }
   }
 
   &--phone {
@@ -45,5 +41,9 @@
       background-size: 60px 60px;
       background-position: 100% 50%;
     }
+  }
+
+  &--invalid {
+    border-color: red;
   }
 }

@@ -9,6 +9,7 @@
   &--opened {
     & .main-nav-toggle__button--close {
       display: block;
+      padding-left: 25px;
     }
 
     & .main-nav-toggle__button--open {

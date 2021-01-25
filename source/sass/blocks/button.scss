@@ -12,7 +12,7 @@
 
   &--download {
     align-self: center;
-    margin-bottom: 33px;
+    margin-bottom: 26px;
     padding: 12px 0;
     min-width: 280px;
     font-size: 18px;
@@ -69,6 +69,7 @@
 
     &:active {
       color: rgba($user-photo-upload-color-text--hover, 0.3);
+      background-color: $user-photo-upload-color;
     }
 
     @media (min-width: $tablet-width) {
