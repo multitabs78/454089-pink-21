@@ -16,14 +16,13 @@
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@2x.jpg");
+    background-image: url("../img/back-mobile.jpg");
   }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: calc((100% - 660px) / 2) min-content auto calc((100% - 660px) / 2);
     grid-template-rows: 110px auto auto;
-    grid-template-areas:
-      ". link toggle ."
+    grid-template-areas: ". link toggle ."
       "nav nav nav nav"
       ". title title .";
     margin-bottom: 20px;
@@ -37,8 +36,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: calc((100% - 960px) / 2) 1fr 2fr calc((100% - 960px) / 2);
-    grid-template-areas:
-      ". link nav ."
+    grid-template-areas: ". link nav ."
       ". title title .";
     margin-bottom: 64px;
     background-image: url("../img/back-desktop.jpg");
