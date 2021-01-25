@@ -36,6 +36,7 @@
 .user-photo__image {
   width: 280px;
   height: auto;
+  vertical-align: middle;
 
   @media (min-width: $tablet-width) {
     width: 300px;

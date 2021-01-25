@@ -2,26 +2,25 @@
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
-  justify-content: center;
   padding: 20px;
-  min-height: 220px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-gap: 45px;
-    padding-top: 5px;
-    min-height: auto;
+    grid-gap: 42px;
+    padding-top: 35px;
   }
 
   @media (min-width: $desktop-width) {
     grid-gap: 210px;
-    padding-right: 130px;
-    padding-left: 130px;
+    padding: 5px 130px;
   }
 }
 
 .footer-links__main-link {
+  justify-self: center;
+
   &:hover {
     fill: #d22856;
   }
@@ -29,6 +28,10 @@
   &:active {
     fill: inherit;
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
   }
 }
 
@@ -43,6 +46,12 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+  padding-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    justify-self: end;
+  }
 }
 
 .footer-links__developer-text {
@@ -52,4 +61,8 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
+}
+
+.footer-links__developer-link {
+  margin-left: 15px;
 }

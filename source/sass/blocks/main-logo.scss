@@ -1,19 +1,12 @@
-.main-logo__glasses {
-  display: none;
+.main-logo {
+  fill: white;
 
-  @media (min-width: $tablet-width) {
-    display: inline;
+  &:hover {
+    fill: #d22856;
   }
 
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.main-logo__glasses-desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: inline;
+  &:active {
+    fill: white;
+    opacity: 0.3;
   }
 }

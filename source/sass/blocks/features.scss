@@ -14,6 +14,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 130px;
+    background-position: 0 232px;
   }
 }
 
@@ -23,7 +24,7 @@
     grid-template:
       "features__title features__title"
       "features__images features__list";
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
     grid-template-columns: 2fr 2fr;
   }
 
@@ -41,7 +42,11 @@
 
 .features__title-container {
   grid-area: features__title;
-  padding-bottom: 75px;
+  padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
 }
 
 .features__title {
@@ -61,11 +66,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-bottom: 60px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
+    justify-content: end;
     padding-top: 26px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,6 +83,10 @@
 
 .features__item {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -99,8 +109,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 10px;
     max-width: 240px;
     font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
 }
@@ -113,8 +125,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 10px;
     max-width: 240px;
     font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -127,9 +141,15 @@
   align-items: center;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    padding-top: 16px;
+  }
+
   @media (min-width: $desktop-width) {
+    justify-content: center;
     margin-bottom: 13px;
-    padding-top: 45px;
+    padding-top: 30px;
   }
 }
 
@@ -141,7 +161,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 33%;
+    min-width: 34%;
   }
 
   &:nth-child(3n) {
@@ -152,15 +172,17 @@
 }
 
 .features__image {
-  margin-bottom: -84px;
+  margin-bottom: -51px;
   width: 100%;
   height: auto;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: -70px;
     width: 268px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: -82px;
     width: 186px;
   }
 }

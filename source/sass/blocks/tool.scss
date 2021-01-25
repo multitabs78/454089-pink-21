@@ -3,9 +3,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 0 10px 0 5px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +21,30 @@
   justify-content: center;
   width: 50px;
   height: 50px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    justify-content: end;
+    padding-left: 13px;
+    padding-top: 13px;
+  }
+
+  &--contrast {
+    @media (min-width: $tablet-width) {
+      padding-left: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 9px;
+  }
 }
 
 .tool__button {
@@ -26,16 +52,66 @@
   border: none;
   opacity: 0.6;
 
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+  }
+
+  & .tool__icon {
+    fill: #283645;
+
+    @media (min-width: $tablet-width) {
+      fill: $icon-color--active;
+    }
+  }
+
   &--active {
     opacity: 1;
 
-    & .icon {
+    & .tool__icon {
       fill: $icon-color--active;
     }
   }
 
   &:hover {
     opacity: 1;
+  }
+}
+
+.tool__icon {
+  &--crop {
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &--fill {
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 48px;
+      height: 43px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: $tablet-width) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 
@@ -50,6 +126,11 @@
 .tool__bar-item {
   width: 100%;
   border-bottom: 1px solid $control-bar-border-color;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -29px;
+    padding-left: 29px;
+  }
 
   &:last-child {
     @media (min-width: $desktop-width) {
@@ -72,11 +153,11 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
+    padding-left: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 32px 70px;
+    padding: 34px 70px;
     padding-left: 40px;
   }
 }
@@ -104,6 +185,10 @@
   &--crop {
     right: 19%;
 
+    @media (min-width: $tablet-width) {
+      right: 24%;
+    }
+
     @media (min-width: $desktop-width) {
       right: 68%;
     }
@@ -111,6 +196,10 @@
 
   &--fill {
     right: 80%;
+
+    @media (min-width: $tablet-width) {
+      right: 74%;
+    }
 
     @media (min-width: $desktop-width) {
       right: 24%;
@@ -120,12 +209,16 @@
   &--contrast {
     right: 42%;
 
+    @media (min-width: $tablet-width) {
+      right: 45%;
+    }
+
     @media (min-width: $desktop-width) {
       right: 46%;
     }
   }
 
   @media (min-width: $desktop-width) {
-    top: 26px;
+    top: 28px;
   }
 }

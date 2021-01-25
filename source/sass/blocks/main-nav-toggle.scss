@@ -1,29 +1,42 @@
 .main-nav-toggle {
   padding: 0;
-  width: 100px;
+  width: 90px;
   height: 100%;
   border: none;
-  background-image: url("../img/svg/close-menu-btn.svg");
   background-color: transparent;
-  background-position: 56px 22px;
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {
-    background-position: 56px 43px;
-  }
+  &--opened {
+    & .main-nav-toggle__button--close {
+      display: block;
+    }
 
-  &:hover {
-    fill: $color-secondary;
+    & .main-nav-toggle__button--open {
+      display: none;
+    }
   }
 
   &--closed {
-    background-image: url("../img/svg/open-menu-btn.svg");
-    background-color: transparent;
-    background-position: 30px 21px;
-    background-repeat: no-repeat;
+    & .main-nav-toggle__button--close {
+      display: none;
+    }
 
-    @media (min-width: $tablet-width) {
-      background-position: 30px 43px;
+    & .main-nav-toggle__button--open {
+      display: block;
+    }
+  }
+
+  & .main-nav-toggle__button {
+    margin: auto;
+    fill: white;
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill: white;
+      opacity: 0.3;
     }
   }
 }

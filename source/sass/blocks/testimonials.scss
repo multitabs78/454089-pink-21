@@ -2,7 +2,8 @@
   padding: 45px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 13px;
+    padding-top: 7px;
+    padding-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,7 +19,7 @@
   padding: 0 20px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
+    padding-top: 66px;
     padding-left: 130px;
     padding-right: 130px;
   }
@@ -105,13 +106,23 @@
 
   @media (min-width: $desktop-width) {
     display: inline-block;
+    margin-top: 29px;
     width: 22px;
     height: 41px;
     background-color: transparent;
-    background-image: url("../img/testimonials-button.svg");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
 

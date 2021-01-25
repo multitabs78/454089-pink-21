@@ -29,9 +29,21 @@
     }
   }
 
-  &--contacts {
+  &--phone {
     @media (min-width: $tablet-width) {
-      box-shadow: inset -57px 0 0 0 $form-input-border-color;
+      background-image: url("../img/phone-icon.svg");
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+      background-position: 100% 50%;
+    }
+  }
+
+  &--email {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/email-icon.svg");
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+      background-position: 100% 50%;
     }
   }
 }

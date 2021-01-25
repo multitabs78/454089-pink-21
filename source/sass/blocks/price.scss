@@ -14,11 +14,12 @@
   @media (min-width: $tablet-width) {
     grid-template-rows: 93px auto;
     padding-bottom: 19px;
+    background-position: 0 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-rows: 154px auto;
-    padding-bottom: 60px;
+    padding-bottom: 48px;
     background-position: 0 0;
   }
 }
@@ -47,6 +48,7 @@
 
   @media (min-width: $tablet-width) {
     table-layout: fixed;
+    margin-bottom: 50px;
     width: 100%;
   }
 }
@@ -87,8 +89,8 @@
   &--hit::after {
     content: "Хит";
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 14px;
+    left: 6px;
     font-size: 14px;
     font-weight: 300;
     transform: rotate(-45deg);
@@ -97,11 +99,13 @@
   &--hit::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -7px;
+    left: -7px;
     height: 74px;
     width: 74px;
-    //hit-ribbon
+    background-image: url("../img/hit-ribbon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -119,6 +123,7 @@
   min-height: 60px;
   min-width: 280px;
   padding: 14px;
+  padding-left: 21px;
   border: 2px solid $border-color;
   background-color: $table-background-color;
   text-transform: uppercase;
@@ -126,10 +131,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 4px;
+    padding-left: 16px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 11px;
+    padding-left: 21px;
   }
 
   &--yes,
