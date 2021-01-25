@@ -5,7 +5,7 @@
     "."
     "price";
   min-width: 320px;
-  padding-bottom: 47px;
+  padding-bottom: 79px;
   background-image: url("../img/grey-background.svg");
   background-repeat: no-repeat;
   background-position: 0 -30px;
@@ -19,7 +19,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-rows: 154px auto;
-    padding-bottom: 48px;
+    padding-bottom: 56px;
     background-position: 0 0;
   }
 }
@@ -89,23 +89,43 @@
   &--hit::after {
     content: "Хит";
     position: absolute;
-    top: 14px;
-    left: 6px;
+    top: 20px;
+    left: 15px;
     font-size: 14px;
     font-weight: 300;
     transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      top: 12px;
+      left: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      left: 15px;
+    }
   }
 
   &--hit::before {
     content: "";
     position: absolute;
-    top: -7px;
-    left: -7px;
+    top: 0;
+    left: 0;
     height: 74px;
     width: 74px;
     background-image: url("../img/hit-ribbon.svg");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      height: 61px;
+      width: 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 74px;
+      width: 74px;
+    }
   }
 }
 

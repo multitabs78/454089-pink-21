@@ -44,10 +44,12 @@
   @include reset-list;
 
   display: grid;
+  grid-auto-columns: 280px;
+  justify-content: center;
   grid-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 300px);
     grid-auto-rows: minmax(456px, max-content);
   }
 
