@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк Фотогалерея</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
   <header class="page-header page-header--not-front-page page-header--menu-bar page-header--no-js">
     <a class="page-header__link main-link" href="index.html">
-      <picture>
         <svg class="page-header__logo main-logo page-header__logo--mobile" width="74" height="23">
           <use xlink:href="img/sprites.svg#main-logo-mobile"></use>
         </svg>
@@ -21,18 +23,15 @@
         <svg class="page-header__logo main-logo page-header__logo--desktop" width="147" height="40">
           <use xlink:href="img/sprites.svg#main-logo-desktop"></use>
         </svg>
-      </picture>
     </a>
     <button class="page-header__nav-toggle main-nav-toggle main-nav-toggle--closed" type="button">
       <span class="visually-hidden">Меню</span>
-      <picture>
         <svg class="main-nav-toggle__button main-nav-toggle__button--open" width="50" height="24">
           <use xlink:href="img/sprites.svg#open-menu-button"></use>
         </svg>
         <svg class="main-nav-toggle__button main-nav-toggle__button--close" width="23" height="23">
           <use xlink:href="img/sprites.svg#close-menu-button"></use>
         </svg>
-      </picture>
     </button>
     <nav class="page-header__nav main-nav main-nav--closed">
       <ul class="main-nav__list">
@@ -68,10 +67,16 @@
           <article class="user-photo__subject">
             <a class="user-photo__link" href="#">
               <picture>
+                <source media="(min-width: 980px)"
+                  srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x" />
+                <source media="(min-width: 660px)"
+                  srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x" />
+                <source media="(min-width: 320px)"
+                  srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x" />
                 <source media="(min-width: 980px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="user-photo__image user-photo__image--of-the-day"
-                src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама дня - подвесной мост">
+                <img class="user-photo__image user-photo__image--of-the-day" src="img/panorama-mobile.jpg"
+                  srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама дня - подвесной мост">
               </picture>
             </a>
             <div class="user-photo__tag-wrapper">
@@ -97,8 +102,12 @@
           <article class="user-photo__subject">
             <a class="user-photo__link" href="#">
               <picture>
-                <source media="(min-width: 980px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <source media="(min-width: 980px)"
+                  srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x" />
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x" />
+                <source media="(min-width: 320px)" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x" />
+                <source media="(min-width: 980px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" />
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" />
                 <img class="user-photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
                   width="280" height="180" alt="Фотосъемка автомобиля">
               </picture>
@@ -123,9 +132,14 @@
           <article class="user-photo__subject">
             <a class="user-photo__link" href="#">
               <picture>
+                <source media="(min-width: 980px)"
+                  srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x" />
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                <source media="(min-width: 320px)" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                <img class="user-photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Барабанная установка">
+                <img class="user-photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                  width="280" height="180" alt="Барабанная установка" />
               </picture>
             </a>
             <div class="user-photo__inner">
@@ -147,9 +161,14 @@
           <article class="user-photo__subject">
             <a class="user-photo__link" href="#">
               <picture>
+                <source media="(min-width: 980px)"
+                  srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x" />
+                <source media="(min-width: 660px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                <source media="(min-width: 320px)" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                <img class="user-photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Вид на небоскреб сквозь панорамную крышу">
+                <img class="user-photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                  width="280" height="180" alt="Вид на небоскреб сквозь панорамную крышу">
               </picture>
             </a>
             <div class="user-photo__inner">
@@ -171,9 +190,14 @@
           <article class="user-photo__subject">
             <a class="user-photo__link" href="#">
               <picture>
+                <source media="(min-width: 980px)"
+                  srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x" />
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                <source media="(min-width: 320px)" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                <img class="user-photo__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча">
+                <img class="user-photo__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+                  width="280" height="180" alt="Кубанская бахча">
               </picture>
             </a>
             <div class="user-photo__inner">
@@ -195,9 +219,14 @@
           <article class="user-photo__subject">
             <a class="user-photo__link" href="#">
               <picture>
+                <source media="(min-width: 980px)"
+                  srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x" />
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
+                <source media="(min-width: 320px)" srcset="img/photo-5-mobile.webp 1x, img/photo-5-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
-                <img class="user-photo__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Вид с горы от первого лица">
+                <img class="user-photo__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x"
+                  width="280" height="180" alt="Вид с горы от первого лица">
               </picture>
             </a>
             <div class="user-photo__inner">
@@ -219,9 +248,14 @@
           <article class="user-photo__subject">
             <a class="user-photo__link" href="#">
               <picture>
+                <source media="(min-width: 980px)"
+                  srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x" />
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
+                <source media="(min-width: 320px)" srcset="img/photo-6-mobile.webp 1x, img/photo-6-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
-                <img class="user-photo__image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Вид из окна самолета">
+                <img class="user-photo__image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x"
+                  width="280" height="180" alt="Вид из окна самолета">
               </picture>
             </a>
             <div class="user-photo__inner">
@@ -251,8 +285,11 @@
         enctype="multipart/form-data">
         <label class="photo-upload__label">
           <picture>
+            <source media="(min-width: 660px)" srcset="img/photo-7-tablet.webp 1x, img/photo-7-tablet@2x.webp 2x">
+            <source media="(min-width: 320px)" srcset="img/photo-7-mobile.webp 1x, img/photo-7-mobile@2x.webp 2x">
             <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
-            <img class="photo-upload__image" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Заснеженная дорога">
+            <img class="photo-upload__image" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x"
+              alt="Заснеженная дорога">
           </picture>
           <input class="photo-upload__input" type="file" accept="image/*">
         </label>

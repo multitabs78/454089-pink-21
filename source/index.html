@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
   <header class="page-header page-header--menu-bar page-header--no-js">
     <a class="page-header__link">
-      <picture>
         <svg class="page-header__logo main-logo page-header__logo--mobile" width="74" height="23">
           <use xlink:href="img/sprites.svg#main-logo-mobile"></use>
         </svg>
@@ -21,18 +23,15 @@
         <svg class="page-header__logo main-logo page-header__logo--desktop" width="147" height="40">
           <use xlink:href="img/sprites.svg#main-logo-desktop"></use>
         </svg>
-      </picture>
     </a>
     <button class="page-header__nav-toggle main-nav-toggle main-nav-toggle--closed" type="button">
       <span class="visually-hidden">Меню</span>
-      <picture>
         <svg class="main-nav-toggle__button main-nav-toggle__button--open" width="50" height="24">
           <use xlink:href="img/sprites.svg#open-menu-button"></use>
         </svg>
         <svg class="main-nav-toggle__button main-nav-toggle__button--close" width="23" height="23">
           <use xlink:href="img/sprites.svg#close-menu-button"></use>
         </svg>
-      </picture>
     </button>
     <nav class="page-header__nav main-nav main-nav--closed">
       <ul class="main-nav__list">
@@ -53,13 +52,14 @@
 
     <div class="page-header__title page-title">
       <h1 class="page-title__heading section-title">Взгляните на&nbsp;жизнь<br class="tablet-only">&ensp;иначе!</h1>
-
       <picture class="page-title__image">
-        <source media="(min-width: 980px)"
-          srcset="img/header-image-desktop.png 1x, img/header-image-desktop@2x.png 2x" />
+        <source media="(min-width: 980px)" srcset="img/header-image-desktop.webp 1x, img/header-image-desktop@2x.webp 2x" />
+        <source media="(min-width: 660px)" srcset="img/header-image-tablet.webp 1x, img/header-image-tablet@2x.webp 2x" />
+        <source media="(min-width: 320px)" srcset="img/header-image-mobile.webp 1x, img/header-image-mobile@2x.webp 2x" />
+        <source media="(min-width: 980px)" srcset="img/header-image-desktop.png 1x, img/header-image-desktop@2x.png 2x" />
         <source media="(min-width: 660px)" srcset="img/header-image-tablet.png 1x, img/header-image-tablet@2x.png 2x" />
-        <img class="page-title__image" src="img/header-image-mobile.png" srcset="img/header-image-mobile@2x.png 2x" width="320" height="286"
-          alt="Пример работы приложения Pink">
+        <img class="page-title__image" src="img/header-image-mobile.png" srcset="img/header-image-mobile@2x.png 2x"
+          width="320" height="286" alt="Пример работы приложения Pink">
       </picture>
       <div class="page-title__market-links">
         <a class="button button--download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
@@ -114,15 +114,24 @@
         </ul>
         <ul class="features__images-list">
           <li class="features__images-item">
-            <img class="features__image" src="img/phone1-desktop.png" srcset="img/phone1-desktop@2x.png 2x"
-              alt="Смартфон с черно-белым изображением">
-          </li>
-          <li class="features__images-item">
-            <img class="features__image" src="img/phone2-desktop.png" srcset="img/phone2-desktop@2x.png 2x"
-              alt="Смартфон с изображением в розовых тонах">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/phone1-desktop.webp 1x, img/phone1-desktop@2x.webp 2x" />
+              <img class="features__image" src="img/phone1-desktop.png" srcset="img/phone1-desktop@2x.png 2x"
+                alt="Смартфон с черно-белым изображением">
+            </picture>
           </li>
           <li class="features__images-item">
             <picture>
+              <source media="(min-width: 980px)" srcset="img/phone2-desktop.webp 1x, img/phone2-desktop@2x.webp 2x" />
+              <img class="features__image" src="img/phone2-desktop.png" srcset="img/phone2-desktop@2x.png 2x"
+                alt="Смартфон с изображением в розовых тонах">
+            </picture>
+          </li>
+          <li class="features__images-item">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/phone3-desktop.webp 1x, img/phone3-desktop@2x.webp 2x" />
+              <source media="(min-width: 660px)" srcset="img/phone3-tablet.webp 1x, img/phone3-tablet@2x.webp 2x" />
+              <source media="(min-width: 320px)" srcset="img/phone3-mobile.webp 1x, img/phone3-mobile@2x.webp 2x" />
               <source media="(min-width: 980px)" srcset="img/phone3-desktop.png 1x, img/phone3-desktop@2x.png 2x" />
               <source media="(min-width: 660px)" srcset="img/phone3-tablet.png 1x, img/phone3-tablet@2x.png 2x" />
               <img class="features__image" src="img/phone3-mobile.png" srcset="img/phone3-mobile@2x.png 2x" width="157"

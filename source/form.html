@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк Конкурс</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
   <header class="page-header page-header--menu-bar page-header--not-front-page page-header--no-js">
     <a class="page-header__link main-link" href="index.html">
-      <picture>
         <svg class="page-header__logo main-logo page-header__logo--mobile" width="74" height="23">
           <use xlink:href="img/sprites.svg#main-logo-mobile"></use>
         </svg>
@@ -21,18 +23,15 @@
         <svg class="page-header__logo main-logo page-header__logo--desktop" width="147" height="40">
           <use xlink:href="img/sprites.svg#main-logo-desktop"></use>
         </svg>
-      </picture>
     </a>
     <button class="page-header__nav-toggle main-nav-toggle main-nav-toggle--closed" type="button">
       <span class="visually-hidden">Меню</span>
-      <picture>
         <svg class="main-nav-toggle__button main-nav-toggle__button--open" width="50" height="24">
           <use xlink:href="img/sprites.svg#open-menu-button"></use>
         </svg>
         <svg class="main-nav-toggle__button main-nav-toggle__button--close" width="23" height="23">
           <use xlink:href="img/sprites.svg#close-menu-button"></use>
         </svg>
-      </picture>
     </button>
     <nav class="page-header__nav main-nav main-nav--closed">
       <ul class="main-nav__list">
@@ -177,6 +176,7 @@
           <use xlink:href="img/sprites.svg#footer-pink-logo"></use>
         </svg>
       </a>
+    </div>
       <div class="footer-links__social social">
         <a href="https://twitter.com" class="social__link social__link--twitter">
           <div class="social-icon">
