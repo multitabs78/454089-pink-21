@@ -36,7 +36,9 @@
       "features__list";
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr;
+    margin: auto;
     width: 100%;
+    max-width: 960px;
   }
 }
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -37,7 +37,7 @@
     <nav class="page-header__nav main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current">Главная</a>
+          <a class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">Фотографии</a>
@@ -52,13 +52,13 @@
     </nav>
 
     <div class="page-header__title page-title">
-      <h1 class="page-title__heading section-title">Взгляните на&nbsp;жизнь <br class="tablet-only"> иначе!</h1>
+      <h1 class="page-title__heading section-title">Взгляните на&nbsp;жизнь<br class="tablet-only">&ensp;иначе!</h1>
 
       <picture class="page-title__image">
         <source media="(min-width: 980px)"
           srcset="img/header-image-desktop.png 1x, img/header-image-desktop@2x.png 2x" />
         <source media="(min-width: 660px)" srcset="img/header-image-tablet.png 1x, img/header-image-tablet@2x.png 2x" />
-        <img class="page-title__image" src="img/header-image-mobile.png" width="320" height="286"
+        <img class="page-title__image" src="img/header-image-mobile.png" srcset="img/header-image-mobile@2x.png 2x" width="320" height="286"
           alt="Пример работы приложения Pink">
       </picture>
       <div class="page-title__market-links">
@@ -114,11 +114,11 @@
         </ul>
         <ul class="features__images-list">
           <li class="features__images-item">
-            <img class="features__image" src="img/phone1-desktop.png" srcset="img/phone1-desktop@2x.png"
+            <img class="features__image" src="img/phone1-desktop.png" srcset="img/phone1-desktop@2x.png 2x"
               alt="Смартфон с черно-белым изображением">
           </li>
           <li class="features__images-item">
-            <img class="features__image" src="img/phone2-desktop.png" srcset="img/phone2-desktop@2x.png"
+            <img class="features__image" src="img/phone2-desktop.png" srcset="img/phone2-desktop@2x.png 2x"
               alt="Смартфон с изображением в розовых тонах">
           </li>
           <li class="features__images-item">
