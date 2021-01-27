@@ -15,7 +15,7 @@
   background-position: 50% 260px;
   background-repeat: no-repeat;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/back-mobile.jpg");
   }
 
@@ -29,7 +29,7 @@
     background-image: url("../img/back-tablet.jpg");
     background-size: 100%;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
     }
   }
@@ -41,8 +41,9 @@
     margin-bottom: 64px;
     background-image: url("../img/back-desktop.jpg");
     background-size: cover;
+    background-position: 50% 0;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
     }
   }

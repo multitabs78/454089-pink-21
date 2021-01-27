@@ -1,6 +1,5 @@
 .user-photo {
   justify-self: center;
-  //align-self: center;
   max-width: 280px;
   background-color: $user-photo-background-color;
 
@@ -107,10 +106,12 @@
 
       & .user-photo__text {
         order: 1;
+        margin-top: -30px;
       }
 
       & .user-photo__likes-counter {
         min-width: min-content;
+        height: 20px;
       }
     }
   }

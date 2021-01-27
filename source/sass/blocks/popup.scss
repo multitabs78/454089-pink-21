@@ -60,6 +60,12 @@
   }
 }
 
+.popup--success .popup__wrapper {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
 .popup__wrapper {
   flex-grow: 1;
   max-width: 280px;

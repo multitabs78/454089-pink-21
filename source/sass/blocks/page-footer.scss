@@ -56,3 +56,11 @@
     }
   }
 }
+
+.page-footer__map-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+}
