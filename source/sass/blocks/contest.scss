@@ -75,11 +75,11 @@
   justify-content: center;
   padding: 0 20px;
   margin-bottom: 24px;
-  max-width: 296px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding: 0;
+    max-width: 296px;
 
     & .button--submit-form {
       margin-bottom: 0;

@@ -42,51 +42,24 @@
   }
 
   &--achiviments {
-    padding-bottom: 16px;
-    min-height: 603px;
     grid-area: achiviments;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    padding-bottom: 34px;
+
+    & .contest-fieldset__legend {
+      padding-top: 17px;
+      margin-bottom: 38px;
+    }
 
     @media (min-width: $tablet-width) {
-      padding: 21px 58px;
-      min-height: 571px;
+      padding-bottom: 36px;
+
+      & .contest-fieldset__legend {
+        padding-top: 0;
+      }
     }
 
     @media (min-width: $desktop-width) {
-      padding: 39px 58px 13px;
-      padding-right: 0;
-      min-height: 250px;
-      flex-direction: row;
-
-      & .checkbox-field {
-        flex-basis: 33%;
-
-        &:nth-child(2) {
-          order: 1;
-        }
-
-        &:nth-child(3) {
-          order: 4;
-        }
-
-        &:nth-child(4) {
-          order: 2;
-        }
-
-        &:nth-child(5) {
-          order: 5;
-        }
-
-        &:nth-child(6) {
-          order: 3;
-        }
-
-        &:nth-child(7) {
-          order: 6;
-        }
-      }
+      padding: 10px 0 44px;
     }
   }
 
@@ -107,24 +80,27 @@
   }
 
   &--app {
-    padding-bottom: 20px;
-    min-height: 335px;
     grid-area: app;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
+    padding-bottom: 31px;
+
+    & .contest-fieldset__legend {
+      padding-top: 14px;
+      margin-bottom: 35px;
+    }
 
     @media (min-width: $tablet-width) {
-      padding: 10px 60px 14px;
-      min-height: 318px;
+      padding-bottom: 44px;
+
+      & .contest-fieldset__legend {
+        padding-top: 5px;
+        margin-bottom: 33px;
+      }
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-
       & .contest-fieldset__legend {
-        margin-left: -30px;
-        margin-right: -40px;
+        padding-top: 0;
       }
     }
   }
@@ -169,10 +145,6 @@
     max-width: fit-content;
   }
 
-  @media (min-width: $desktop-width) {
-    // max-width: 320px;
-  }
-
   &--clear-mobile {
     display: none;
 
@@ -181,6 +153,60 @@
       margin-bottom: 25px;
       padding-right: 32px;
       padding-left: 32px;
+    }
+  }
+}
+
+.contest-fieldset__fields-list {
+  @include reset-list;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
+  &--achiviments {
+    grid-row-gap: 35px;
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 50px;
+      padding-left: 55px;
+
+      & .contest-fieldset__fields-item {
+
+        &:nth-child(1) {
+          order: 1;
+        }
+
+        &:nth-child(2) {
+          order: 4;
+        }
+
+        &:nth-child(3) {
+          order: 2;
+        }
+
+        &:nth-child(4) {
+          order: 5;
+        }
+
+        &:nth-child(5) {
+          order: 3;
+        }
+
+        &:nth-child(6) {
+          order: 6;
+        }
+      }
+    }
+  }
+
+  &--app {
+    grid-row-gap: 29px;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 51px;
     }
   }
 }
