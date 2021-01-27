@@ -31,4 +31,17 @@
       padding-bottom: 0;
     }
   }
+
+  &--catalog {
+    padding-top: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      padding-bottom: 20px;
+    }
+  }
 }
