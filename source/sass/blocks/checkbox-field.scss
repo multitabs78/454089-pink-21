@@ -48,3 +48,14 @@
 .checkbox-field__input:checked + .checkbox-field__label::before {
   background-image: url("../img/svg/checkbox-checked.svg");
 }
+
+
+.checkbox-field__input:not(:checked):disabled + .checkbox-field__label::before,
+.checkbox-field__input:checked:disabled + .checkbox-field__label::before {
+  opacity: 0.3;
+}
+
+.checkbox-field__input:not(:checked):disabled + .checkbox-field__label:hover::before,
+.checkbox-field__input:checked:disabled + .checkbox-field__label:hover::before {
+  border-color: $form-input-border-color;
+}

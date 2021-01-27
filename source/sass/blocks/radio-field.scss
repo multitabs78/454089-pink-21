@@ -52,3 +52,13 @@
 .radio-field__input:checked:active + .radio-field__label::before {
   border-color: $form-input-border-color--active;
 }
+
+.radio-field__input:not(:checked):disabled + .radio-field__label::before,
+.radio-field__input:checked:disabled + .radio-field__label::before {
+  opacity: 0.3;
+}
+
+.radio-field__input:not(:checked):disabled + .radio-field__label:hover::before,
+.radio-field__input:checked:disabled + .radio-field__label:hover::before {
+  border-color: $form-input-border-color;
+}

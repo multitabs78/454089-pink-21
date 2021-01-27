@@ -33,6 +33,10 @@
       color: $link-color;
       background-color: white;
     }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--submit-form {
@@ -43,6 +47,7 @@
     text-transform: uppercase;
     background-color: $form-button-background-color;
     box-sizing: border-box;
+    border-radius: 3px;
 
     &:hover {
       background-color: $form-button-background-color--hover;
